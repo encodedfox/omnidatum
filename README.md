@@ -12,10 +12,11 @@ An Output Directory for the MindMesh - An Automation System to provide syncs of 
 
 * Architecture
     * MartinFowler’s Patterns of Enterprise Application Architecture (P of EAA): https://www.martinfowler.com/eaaCatalog/index.html
-        * Gold Standard! → DomainModel: https://www.martinfowler.com/eaaCatalog/domainModel.html
-        * AWS has lots of this that need to go away → Anti-Pattern: https://www.martinfowler.com/bliki/AnemicDomainModel.html
+        * DomainModel: https://www.martinfowler.com/eaaCatalog/domainModel.html
+        * Anti-Pattern: https://www.martinfowler.com/bliki/AnemicDomainModel.html
     * Simon Wardley - Book Github: https://github.com/andrewharmellaw/wardley-maps-book
     * Simon Wardley - Warley Maps (Finding A Path): https://medium.com/wardleymaps/finding-a-path-cdb1249078c0
+    * Clean Code Blog (Uncle Bob): https://blog.cleancoder.com/
     * ADR Record Examples and Detailed Processes: https://github.com/joelparkerhenderson/architecture-decision-record
     * Y-Statements: https://medium.com/olzzio/y-statements-10eb07b5a177
 * DataMesh
