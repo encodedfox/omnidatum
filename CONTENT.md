@@ -75,13 +75,18 @@ An Output Directory for the MindMesh - An Automation System to provide syncs of 
   * HyperLedger Fabric: <https://wiki.hyperledger.org/display/fabric>
   * Moloch - <https://github.com/MolochVentures/moloch>
 * Programing Languages
-  * Golang
   * Python
-  * F#/.Net
-  * Elixer
-  * Java
+  * Golang
+  * F#/C#
+  * Rust
+  * Java/Clojure
+  * R
   * Erlang
-  * Clojure
+  * Elixer
+* Shells
+  * PowerShell
+  * Zsh
+  * Bash
 * State Machine Languages
   * Amazon State Language (ASL) - <https://states-language.net/spec.html>
 
