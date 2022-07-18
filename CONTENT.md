@@ -7,6 +7,17 @@
   * Documenting Software Architectures (Diagrams)
 * Mastering the Requirements Process (ADD + Processes + Diagrams)
 
+## Service Concepts & Examples
+
+* Optimal Time-Series Database
+  * Heroic
+    * [Web Documentation](https://spotify.github.io/heroic/docs/overview)
+    * [Archived GitHub](https://github.com/spotify/heroic)
+* Distributed Knowledge Graph Store
+  * Akutan
+    * [Web Documentation](https://tech.ebayinc.com/engineering/akutan-a-distributed-knowledge-graph-store/)
+    * [Archived GitHub](https://github.com/eBay/akutan)
+
 ## Web References
 
 * Architecture
@@ -83,7 +94,6 @@
   * Python (v3)
 * Scripting Languages
   * PowerShell
-  * F#/C#/.NET
   * Zsh
   * Bash
 * State Machine Languages
