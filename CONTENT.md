@@ -86,13 +86,15 @@
 * Application Languages
   * Rust
   * Golang
-  * Scala/Clojure/Java
-  * V
-  * Kotlin
+  * JVM
+    * Scala
+    * Clojure
+    * Kotlin
   * Haskell
+  * V
   * Erlang
-  * Python (v3)
 * Scripting Languages
+  * Python (v3)
   * PowerShell
   * Zsh
   * Bash
