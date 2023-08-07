@@ -2,7 +2,7 @@
 
 ## Repo Lists
 
-| [List](./LIST.md) | [Table](.TABLE.md) |
+| [List](./LIST.md) | [Table](./TABLE.md) |
 | - | - |
 
 ## Books
