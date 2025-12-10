@@ -108,6 +108,7 @@
 
 ## GitHub Projects
 
+* [Codeberg](https://codeberg.org/forgejo/forgejo)
 * NDiag - <https://github.com/k1LoW/ndiag>
 * GoReleaser - <https://github.com/goreleaser/goreleaser>
 * Gin - <https://github.com/gin-gonic/gin>
