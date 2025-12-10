@@ -90,14 +90,12 @@
   * Moloch - <https://github.com/MolochVentures/moloch>
 * Application Languages
   * Rust
+  * OCaml
+  * Zig
+  * Nim
   * Golang
-  * JVM
-    * Scala
-    * Clojure
-    * Kotlin
-  * Haskell
-  * V
   * Erlang
+  * V
 * Scripting Languages
   * Python (v3)
   * PowerShell
