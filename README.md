@@ -90,17 +90,16 @@
   * Moloch - <https://github.com/MolochVentures/moloch>
 * Application Languages
   * Rust
-  * OCaml
-  * Zig
-  * Nim
-  * Golang
-  * Koka
-  * Erlang
-  * V
-* Scripting Languages
   * Python (v3)
+  * Erlang
+  * Elixer
+  * Golang
+  * Mojo
+* Scripting Languages
+  * Golang
+  * Python 3
+* Shells
   * PowerShell
-  * Zsh
   * Bash
 * State Machine Languages
   * Amazon State Language (ASL) - <https://states-language.net/spec.html>
