@@ -1,5 +1,0 @@
-/Users/joemelfi/projects/repoquery/target/debug/deps/pest_derive-448880141a52d64e.d: /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pest_derive-2.8.4/src/lib.rs
-
-/Users/joemelfi/projects/repoquery/target/debug/deps/libpest_derive-448880141a52d64e.dylib: /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pest_derive-2.8.4/src/lib.rs
-
-/Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pest_derive-2.8.4/src/lib.rs:
