@@ -1,0 +1,102 @@
+# Cleanup Candidates Report
+
+This report identifies starred repositories that may be stale, archived, or have moved to other locations. The goal is to help you decide which repos to unstar.
+
+## Summary
+- **Total repos analyzed**: 1244
+- **Generated**: 2026-06-17
+
+## 1. Archived Repos (GitHub's Archive Flag)
+
+These repos have been marked as archived by GitHub itself. They are no longer actively maintained.
+
+### Key Findings:
+- **Total archived repos**: 294 (23.6%)
+- **Average stars**: 1,657
+- **Most common languages**: Go (31%), Python (15%), Java (12%), Rust (10%), JavaScript (8%)
+- **Most recent archive**: 2026-06-16
+
+### Top Archived Repos by Stars:
+1. **minio/minio** - 61,205 stars - "MinIO is a high-performance, S3 compatible object store"
+2. **AntonOsika/gpt-engineer** - 55,205 stars - "CLI platform to experiment with codegen"
+3. **slatedocs/slate** - 36,081 stars - "Beautiful static documentation for your API"
+4. **RooCodeInc/Roo-Code** - 24,234 stars - "Roo Code gives you a whole dev team of AI agents"
+5. **BurntSushi/xsv** - 10,750 stars - "A fast CSV command line toolkit written in Rust"
+
+### Notable Archived Repos:
+- **aws/aws-sdk-go** - Archived with note: "This SDK has reached end-of-support. The AWS SDK for Go v2 is available here: https://github.com/aws/aws-sdk-go-v2"
+- **github/semantic** - Archive note: "Parsing, analyzing, and comparing source code across many languages"
+- **hyperledger/fabric-sdk-go** - Archive note: "A collection of Solana programs maintained by Solana Labs"
+- **camunda/camunda-bpm-platform** - Archive note: "Camunda 7 CE is End of Life (EoL). Please check out Camuna 8 instead"
+- **solana-labs/solana-program-library** - Archive note: "A collection of Solana programs maintained by Solana Labs"
+
+## 2. Stale/Abandoned Repos (>12 months since last commit)
+
+These repos are still active on GitHub but haven't had code commits in over a year.
+
+### Activity Breakdown:
+- **Active** (<3 months): 802 repos (64.5%)
+- **Maintained** (3-12 months): 140 repos (11.3%)
+- **Stale** (12-24 months): 89 repos (7.2%)
+- **Abandoned** (>24 months): 205 repos (16.5%)
+
+### Key Stale/Abandoned Repos:
+- **practical-tutorials/project-based-learning** - Last activity: 2024-08-15
+- **AntonOsika/gpt-engineer** - Last activity: 2025-05-14
+- **wg/wrk** - Last activity: 2023-12-30
+- **floodsung/Deep-Learning-Papers-Reading-Roadmap** - Last activity: 2022-11-27
+- **open-guides/og-aws** - Last activity: 2024-08-16
+
+### Notable Abandoned Repos:
+- **larsenwork/monoid** - Last activity: 2020-10-26 (5+ years ago)
+- **mit-pdos/noria** - Last activity: 2021-10-30 (4+ years ago)
+- **meowmeowmeowmeowmeow/meow** - Last activity: 2020-02-26 (6+ years ago)
+- **8l/pijul** - Last activity: 2015-10-29 (10+ years ago)
+
+## 3. Moved/Migrated Repos
+
+These repos have moved to other platforms or been deprecated.
+
+### Platform Migrations:
+- **ziglang/zig** - "Moved to Codeberg" (43,114 stars)
+- **technomancy/leiningen** - "Moved to Codeberg; this is a temporary convenience mirror" (7,304 stars)
+- **janikvonrotz/awesome-powershell** - "This repository has been moved to https://codeberg.org/janikvonrotz/awesome-powershell" (5,395 stars)
+
+### End-of-Life Notifications:
+- **rebuy-de/aws-nuke** - Has `deprecated` topic (5,805 stars)
+- **mozilla/Fira** - "DEPRECATED - Mozilla's new typeface, used in Firefox OS" (5,157 stars)
+- **osohq/oso** - "Deprecated: See README" (3,494 stars)
+
+### Project Deprecations:
+- **camunda/camunda-bpm-platform** - "Camunda 7 CE is End of Life (EoL)" (4,270 stars)
+- **hyperledger-archives/ursa** - "has moved to end-of-life status" (325 stars)
+- **hyperledger-archives/grid** - "has moved to end-of-life status" (206 stars)
+
+## 4. Recommendations
+
+### High Priority (Unstar Now):
+1. **All archived repos** (294 repos) - These are no longer maintained
+2. **Repos with platform migration notices** (3 repos) - These are actively redirecting users
+3. **Repos with explicit "no longer maintained"** (3 repos) - Clear deprecation signals
+
+### Medium Priority (Review and Consider):
+1. **Stale repos** (89 repos) - May still be useful but inactive
+2. **Abandoned repos** (205 repos) - Likely no longer relevant
+3. **Repos with "deprecated" topics** (3 repos) - Explicitly marked as deprecated
+
+### Low Priority (Monitor):
+1. **Active repos with old commit history** - May still be useful for reference
+
+## Files Generated:
+- `reports/archived_repos.md` - Full list of archived repos
+- `reports/stale_repos.json` - Stale/abandoned repos with activity data
+- `reports/moved_repos.json` - Repos that have moved or been deprecated
+
+## Next Steps:
+1. Review the detailed reports above
+2. Visit repos on GitHub to confirm status
+3. Decide which repos to unstar based on your current needs
+4. After cleanup, run `repoquery sync --relations starred && repoquery generate` to regenerate fresh markdown files
+
+---
+*Report generated by OmniDatum (repoquery) v1.0*

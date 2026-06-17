@@ -1,6 +1,6 @@
 //! Sync orchestrator for coordinating external data fetches.
 
-use crate::{SyncCache, SyncResult, ProgressTracker};
+use crate::{redact_sensitive, SyncCache, SyncResult, ProgressTracker};
 use crate::adapters::{DataSourceAdapter, GitHubAdapter};
 use od_core::config::OmnidatumConfig;
 use od_core::{CanonicalData, Relation, Repository, SyncQualityReport, DataCompletenessMetrics, DataAnomaly, AnomalyType};
@@ -114,13 +114,13 @@ impl SyncOrchestrator {
                     self.progress.increment_synced(&ident);
                 }
                 Ok((_idx, ident, Err(e))) => {
-                    error!("Failed to sync {}: {}", ident, e);
+                    error!("Failed to sync {}: {}", ident, redact_sensitive(&e.to_string()));
                     failed += 1;
                     failures.push((ident, e.to_string()));
                     self.progress.increment_failed();
                 }
                 Err(e) => {
-                    error!("Sync task panicked: {}", e);
+                    error!("Sync task panicked: {}", redact_sensitive(&e.to_string()));
                     failed += 1;
                 }
             }
@@ -188,7 +188,7 @@ impl SyncOrchestrator {
                 Relation::Starred => {
                     // Bulk GraphQL fetch — ~10 requests instead of 845 individual REST calls
                     let repos = adapter.fetch_starred_graphql().await.unwrap_or_else(|e| {
-                        warn!("fetch_starred_graphql failed: {}", e);
+                        warn!("fetch_starred_graphql failed: {}", redact_sensitive(&e.to_string()));
                         vec![]
                     });
                     let count = self.merge_fetched_repos(&mut data, repos);
@@ -197,7 +197,7 @@ impl SyncOrchestrator {
                 }
                 Relation::Owned => {
                     let repos = adapter.fetch_user_repos().await.unwrap_or_else(|e| {
-                        warn!("fetch_user_repos failed: {}", e);
+                        warn!("fetch_user_repos failed: {}", redact_sensitive(&e.to_string()));
                         vec![]
                     });
                     let count = self.merge_fetched_repos(&mut data, repos);
@@ -206,7 +206,7 @@ impl SyncOrchestrator {
                 }
                 Relation::Forked => {
                     let repos = adapter.fetch_user_forks().await.unwrap_or_else(|e| {
-                        warn!("fetch_user_forks failed: {}", e);
+                        warn!("fetch_user_forks failed: {}", redact_sensitive(&e.to_string()));
                         vec![]
                     });
                     let count = self.merge_fetched_repos(&mut data, repos);
@@ -215,7 +215,7 @@ impl SyncOrchestrator {
                 }
                 Relation::Watching => {
                     let repos = adapter.fetch_watched_repos().await.unwrap_or_else(|e| {
-                        warn!("fetch_watched_repos failed: {}", e);
+                        warn!("fetch_watched_repos failed: {}", redact_sensitive(&e.to_string()));
                         vec![]
                     });
                     let count = self.merge_fetched_repos(&mut data, repos);
@@ -259,7 +259,7 @@ impl SyncOrchestrator {
         let adapter = GitHubAdapter::new(&self.config).await?;
 
         let repos = adapter.fetch_org_repos(org).await.unwrap_or_else(|e| {
-            warn!("fetch_org_repos({}) failed: {}", org, e);
+            warn!("fetch_org_repos({}) failed: {}", org, redact_sensitive(&e.to_string()));
             vec![]
         });
         let synced = self.merge_fetched_repos(&mut data, repos);
@@ -587,7 +587,7 @@ impl SyncOrchestrator {
                         .increment_synced(&format!("{}/{}", owner, name));
                 }
                 Err(e) => {
-                    error!("Failed to sync {}/{}: {}", owner, name, e);
+                    error!("Failed to sync {}/{}: {}", owner, name, redact_sensitive(&e.to_string()));
                     failed += 1;
                     failures.push((repo.id.clone(), e.to_string()));
                     self.progress.increment_failed();

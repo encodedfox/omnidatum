@@ -10,7 +10,7 @@ mod orchestrator;
 
 pub use adapters::{DataSourceAdapter, GitHubAdapter};
 pub use cache::{CacheEntry, SyncCache};
-pub use client::retry_with_backoff;
+pub use client::{redact_sensitive, retry_with_backoff};
 pub use error::SyncError;
 pub use orchestrator::SyncOrchestrator;
 pub use progress::ProgressTracker;

@@ -1,7 +1,48 @@
 //! Retry logic with exponential backoff for network operations
+//!
+//! # Security
+//! All sensitive data (tokens, credentials) must be redacted before logging.
+//! Use [`redact_sensitive`] for error messages that may contain API responses.
 
 use anyhow::Result;
 use std::time::Duration;
+
+/// Redact sensitive patterns from a string for safe logging.
+/// Strips common token patterns: ghp_*, gho_*, ghu_*, github_pat_*, Bearer tokens.
+pub fn redact_sensitive(input: &str) -> String {
+    let patterns = [
+        ("ghp_", "ghp_"),
+        ("gho_", "gho_"),
+        ("ghu_", "ghu_"),
+        ("github_pat_", "github_pat_"),
+    ];
+    let mut result = input.to_string();
+    for (prefix, label) in &patterns {
+        while let Some(start) = result.find(*prefix) {
+            let end = start + prefix.len();
+            let remaining = &result[end..];
+            let token_end = remaining
+                .find(|c: char| !c.is_alphanumeric() && c != '_' && c != '-')
+                .unwrap_or(remaining.len());
+            let replacement = format!("{}___REDACTED___", label);
+            result.replace_range(start..end + token_end, &replacement);
+        }
+    }
+    // Also redact "Bearer <token>" and "token <token>" patterns
+    for keyword in &["Bearer ", "bearer ", "token ", "Token "] {
+        while let Some(start) = result.find(*keyword) {
+            let end = start + keyword.len();
+            let remaining = &result[end..];
+            let token_end = remaining
+                .find(|c: char| !c.is_alphanumeric() && c != '_' && c != '-')
+                .unwrap_or(remaining.len());
+            if token_end > 0 {
+                result.replace_range(end..end + token_end, "___REDACTED___");
+            }
+        }
+    }
+    result
+}
 
 /// Retry an async operation with exponential backoff
 ///
@@ -41,7 +82,7 @@ where
                     || error_msg.contains("network");
 
                 if !is_retryable {
-                    tracing::debug!("Error not retryable: {}", e);
+                    tracing::debug!("Error not retryable: {}", redact_sensitive(&e.to_string()));
                     return Err(e);
                 }
 
@@ -49,7 +90,7 @@ where
                     "Attempt {}/{} failed: {}. Retrying in {:?}...",
                     attempt,
                     max_attempts,
-                    e,
+                    redact_sensitive(&e.to_string()),
                     delay
                 );
 

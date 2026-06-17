@@ -1,0 +1,15 @@
+# Clippy configuration — see https://doc.rust-lang.org/clippy/configuration.html
+
+# Allow unwrap in test code only
+allow-unwrap-in-tests = true
+
+# Raise the threshold for too-many-arguments (repo_from_row takes 13 params)
+too-many-arguments-threshold = 15
+
+# Disallow panic-related macros in production code
+disallowed-methods = [
+    "std::panic",
+    "std::todo",
+    "std::unreachable",
+    "std::unimplemented",
+]

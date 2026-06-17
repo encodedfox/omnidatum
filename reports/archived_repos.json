@@ -1,0 +1,3081 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
+     Running `target/debug/repoquery query list --archived true --format json`
+[
+  {
+    "id": "github-com-minio-minio",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/minio/minio",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "minio",
+      "owner": "minio",
+      "full_name": "minio/minio",
+      "description": "MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.",
+      "primary_language": "Go",
+      "license": "GNU Affero General Public License v3.0",
+      "license_spdx": "AGPL-3.0",
+      "stars": 61206,
+      "topics": [
+        "go",
+        "storage",
+        "cloud",
+        "s3",
+        "objectstorage",
+        "cloudstorage",
+        "amazon-s3",
+        "cloudnative",
+        "k8s",
+        "kubernetes",
+        "multi-cloud",
+        "multi-cloud-kubernetes"
+      ]
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": true,
+      "readme_inclusion_reason": "star_threshold"
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2026-04-24",
+      "last_star_update": "2026-06-17",
+      "quality_score": 98
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-AntonOsika-gpt-engineer",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/AntonOsika/gpt-engineer",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "gpt-engineer",
+      "owner": "AntonOsika",
+      "full_name": "AntonOsika/gpt-engineer",
+      "description": "CLI platform to experiment with codegen. Precursor to: https://lovable.dev",
+      "primary_language": "Python",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 55205,
+      "topics": [
+        "ai",
+        "coding-assistant",
+        "gpt-4",
+        "openai",
+        "python",
+        "autonomous-agent",
+        "codebase-generation",
+        "code-generation",
+        "codegen",
+        "gpt-engineer"
+      ]
+    },
+    "classification": {
+      "language_category": "Python",
+      "readme_inclusion": true,
+      "readme_inclusion_reason": "star_threshold"
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2025-05-14",
+      "last_star_update": "2026-06-17",
+      "quality_score": 98
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-slatedocs-slate",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/slatedocs/slate",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "slate",
+      "owner": "slatedocs",
+      "full_name": "slatedocs/slate",
+      "description": "Beautiful static documentation for your API",
+      "primary_language": "SCSS",
+      "stars": 36081,
+      "topics": [
+        "slate",
+        "api-documentation",
+        "api",
+        "static-site-generator"
+      ],
+      "homepage": "https://slatedocs.github.io/slate"
+    },
+    "classification": {
+      "language_category": "SCSS",
+      "readme_inclusion": true,
+      "readme_inclusion_reason": "star_threshold"
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2026-02-01",
+      "last_star_update": "2026-06-17",
+      "quality_score": 98
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-RooCodeInc-Roo-Code",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/RooCodeInc/Roo-Code",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "Roo-Code",
+      "owner": "RooCodeInc",
+      "full_name": "RooCodeInc/Roo-Code",
+      "description": "Roo Code gives you a whole dev team of AI agents in your code editor.",
+      "primary_language": "TypeScript",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 24234,
+      "homepage": "https://roocode.com"
+    },
+    "classification": {
+      "language_category": "TypeScript",
+      "readme_inclusion": true,
+      "readme_inclusion_reason": "star_threshold"
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2026-05-15",
+      "last_star_update": "2026-06-17",
+      "quality_score": 98
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-BurntSushi-xsv",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/BurntSushi/xsv",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "xsv",
+      "owner": "BurntSushi",
+      "full_name": "BurntSushi/xsv",
+      "description": "A fast CSV command line toolkit written in Rust.",
+      "primary_language": "Rust",
+      "license": "The Unlicense",
+      "license_spdx": "Unlicense",
+      "stars": 10750,
+      "topics": [
+        "csv",
+        "cli",
+        "command-line",
+        "rust"
+      ]
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-04-24",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-sourcegraph-sourcegraph-public-snapshot",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/sourcegraph/sourcegraph-public-snapshot",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "sourcegraph-public-snapshot",
+      "owner": "sourcegraph",
+      "full_name": "sourcegraph/sourcegraph-public-snapshot",
+      "description": "Code AI platform with Code Search & Cody",
+      "primary_language": "Go",
+      "license": "Other",
+      "license_spdx": "NOASSERTION",
+      "stars": 10289,
+      "topics": [
+        "sourcegraph",
+        "code-search",
+        "code-intelligence",
+        "repo-type-main",
+        "cody"
+      ],
+      "homepage": "https://sourcegraph.com"
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-09-02",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-golang-mock",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/golang/mock",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "mock",
+      "owner": "golang",
+      "full_name": "golang/mock",
+      "description": "GoMock is a mocking framework for the Go programming language.",
+      "primary_language": "Go",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 9361
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-01-08",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-github-semantic",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/github/semantic",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "semantic",
+      "owner": "github",
+      "full_name": "github/semantic",
+      "description": "Parsing, analyzing, and comparing source code across many languages",
+      "primary_language": "Haskell",
+      "stars": 9044,
+      "topics": [
+        "keep"
+      ]
+    },
+    "classification": {
+      "language_category": "Haskell",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-04-01",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-aws-aws-sdk-go",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/aws/aws-sdk-go",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "aws-sdk-go",
+      "owner": "aws",
+      "full_name": "aws/aws-sdk-go",
+      "description": "This SDK has reached end-of-support. The AWS SDK for Go v2 is available here: https://github.com/aws/aws-sdk-go-v2",
+      "primary_language": "Go",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 8687,
+      "topics": [
+        "go",
+        "aws-sdk",
+        "aws"
+      ]
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-07-31",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-facebook-buck",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/facebook/buck",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "buck",
+      "owner": "facebook",
+      "full_name": "facebook/buck",
+      "description": "A fast build system that encourages the creation of small, reusable modules over a variety of platforms and languages.",
+      "primary_language": "Java",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 8542,
+      "topics": [
+        "build-tool",
+        "java",
+        "python",
+        "android",
+        "ios",
+        "buck"
+      ],
+      "homepage": "https://buck.build"
+    },
+    "classification": {
+      "language_category": "Java",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-10-25",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-rebuy-de-aws-nuke",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/rebuy-de/aws-nuke",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "aws-nuke",
+      "owner": "rebuy-de",
+      "full_name": "rebuy-de/aws-nuke",
+      "description": "Nuke a whole AWS account and delete all its resources.",
+      "primary_language": "Go",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 5805,
+      "topics": [
+        "aws",
+        "golang",
+        "cli",
+        "deprecated"
+      ],
+      "homepage": "https://github.com/ekristen/aws-nuke"
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-10-15",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-tensorflow-rust",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/tensorflow/rust",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "rust",
+      "owner": "tensorflow",
+      "full_name": "tensorflow/rust",
+      "description": "Rust language bindings for TensorFlow",
+      "primary_language": "Rust",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 5480,
+      "topics": [
+        "tensorflow",
+        "rust",
+        "machine-learning"
+      ]
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-01-12",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-janikvonrotz-awesome-powershell",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/janikvonrotz/awesome-powershell",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "awesome-powershell",
+      "owner": "janikvonrotz",
+      "full_name": "janikvonrotz/awesome-powershell",
+      "description": "This repository has been moved to https://codeberg.org/janikvonrotz/awesome-powershell. Please visit the new location for the latest updates.",
+      "primary_language": "PowerShell",
+      "license": "GNU Affero General Public License v3.0",
+      "license_spdx": "AGPL-3.0",
+      "stars": 5395,
+      "topics": [
+        "powershell",
+        "windows-powershell",
+        "powershell-ise",
+        "powershell-cmdlets",
+        "awesome",
+        "guides",
+        "tutorial",
+        "linux-powershell",
+        "awesome-list",
+        "list"
+      ]
+    },
+    "classification": {
+      "language_category": "PowerShell",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-04-14",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-mozilla-Fira",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/mozilla/Fira",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "Fira",
+      "owner": "mozilla",
+      "full_name": "mozilla/Fira",
+      "description": "DEPRECATED - Mozilla's new typeface, used in Firefox OS",
+      "primary_language": "CSS",
+      "license": "Other",
+      "license_spdx": "NOASSERTION",
+      "stars": 5157,
+      "topics": [
+        "abandoned",
+        "unmaintained"
+      ],
+      "homepage": "mozilla.github.io/Fira"
+    },
+    "classification": {
+      "language_category": "CSS",
+      "readme_inclusion": true,
+      "readme_inclusion_reason": "star_threshold"
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2020-12-16",
+      "last_star_update": "2026-06-17",
+      "quality_score": 78
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-mitchellh-gox",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/mitchellh/gox",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "gox",
+      "owner": "mitchellh",
+      "full_name": "mitchellh/gox",
+      "description": "A dead simple, no frills Go cross compile tool",
+      "primary_language": "Go",
+      "license": "Mozilla Public License 2.0",
+      "license_spdx": "MPL-2.0",
+      "stars": 4580
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-05-02",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-camunda-camunda-bpm-platform",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/camunda/camunda-bpm-platform",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "camunda-bpm-platform",
+      "owner": "camunda",
+      "full_name": "camunda/camunda-bpm-platform",
+      "description": "Camunda 7 CE is End of Life (EoL). Please check out Camunda 8 instead (https://github.com/camunda/camunda) or read about Camunda 7 Enterprise End of Life (https://camunda.com/blog/2025/02/camunda-7-enterprise-end-of-life-extension/) – Camunda 7 CE was a flexible framework for workflow and decision automation using BPMN and DMN.",
+      "primary_language": "Java",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 4270,
+      "topics": [
+        "camunda-bpm-platform",
+        "bpm",
+        "process-engine",
+        "java",
+        "camunda-engine",
+        "dmn",
+        "cmmn",
+        "workflow",
+        "bpmn",
+        "end-of-life",
+        "eol"
+      ],
+      "homepage": "https://camunda.com/"
+    },
+    "classification": {
+      "language_category": "Java",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-11-04",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-solana-labs-solana-program-library",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/solana-labs/solana-program-library",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "solana-program-library",
+      "owner": "solana-labs",
+      "full_name": "solana-labs/solana-program-library",
+      "description": "A collection of Solana programs maintained by Solana Labs",
+      "primary_language": "Rust",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 4227,
+      "homepage": "https://solanalabs.com"
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-03-11",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-sourcegraph-cody-public-snapshot",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/sourcegraph/cody-public-snapshot",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "cody-public-snapshot",
+      "owner": "sourcegraph",
+      "full_name": "sourcegraph/cody-public-snapshot",
+      "description": "Type less, code more: Cody is an AI code assistant that uses advanced search and codebase context to help you write and fix code.",
+      "primary_language": "TypeScript",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 3801,
+      "topics": [
+        "ai",
+        "intellij-plugin",
+        "vscode-extension"
+      ],
+      "homepage": "https://cody.dev"
+    },
+    "classification": {
+      "language_category": "TypeScript",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-08-01",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-bosun-monitor-bosun",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/bosun-monitor/bosun",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "bosun",
+      "owner": "bosun-monitor",
+      "full_name": "bosun-monitor/bosun",
+      "description": "Time Series Alerting Framework",
+      "primary_language": "Go",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 3394,
+      "topics": [
+        "go",
+        "bosun",
+        "scollector",
+        "monitoring",
+        "alerting",
+        "tsdb"
+      ],
+      "homepage": "http://bosun.org"
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-02-13",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-hexchat-hexchat",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/hexchat/hexchat",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "hexchat",
+      "owner": "hexchat",
+      "full_name": "hexchat/hexchat",
+      "description": "GTK+ IRC client",
+      "primary_language": "C",
+      "license": "GNU General Public License v2.0",
+      "license_spdx": "GPL-2.0",
+      "stars": 3236,
+      "topics": [
+        "irc",
+        "irc-client",
+        "gtk",
+        "linux",
+        "windows",
+        "meson",
+        "c",
+        "hexchat"
+      ],
+      "homepage": "https://hexchat.github.io"
+    },
+    "classification": {
+      "language_category": "C",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-08-19",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-kkos-oniguruma",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/kkos/oniguruma",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "oniguruma",
+      "owner": "kkos",
+      "full_name": "kkos/oniguruma",
+      "description": "regular expression library",
+      "primary_language": "C",
+      "license": "Other",
+      "license_spdx": "NOASSERTION",
+      "stars": 2525,
+      "topics": [
+        "regular-expression",
+        "regexp",
+        "c"
+      ]
+    },
+    "classification": {
+      "language_category": "C",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-04-24",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-awslabs-diagram-maker",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/awslabs/diagram-maker",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "diagram-maker",
+      "owner": "awslabs",
+      "full_name": "awslabs/diagram-maker",
+      "description": "A library to display an interactive editor for any graph-like data.",
+      "primary_language": "TypeScript",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 2418,
+      "topics": [
+        "aws",
+        "visualization",
+        "diagram",
+        "interactive",
+        "canvas",
+        "editor",
+        "drag",
+        "drop",
+        "workflow",
+        "state-machine",
+        "flowchart",
+        "diagram-maker",
+        "diagram-editor",
+        "graph",
+        "interactive-demos",
+        "diagrams",
+        "cloud"
+      ],
+      "homepage": "https://awslabs.github.io/diagram-maker"
+    },
+    "classification": {
+      "language_category": "TypeScript",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-04-26",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-langchain-ai-executive-ai-assistant",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/langchain-ai/executive-ai-assistant",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "executive-ai-assistant",
+      "owner": "langchain-ai",
+      "full_name": "langchain-ai/executive-ai-assistant",
+      "description": "",
+      "primary_language": "Python",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 2211
+    },
+    "classification": {
+      "language_category": "Python",
+      "readme_inclusion": true,
+      "readme_inclusion_reason": "star_threshold"
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2026-03-09",
+      "last_star_update": "2026-06-17",
+      "quality_score": 65
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-praetorian-inc-gokart",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/praetorian-inc/gokart",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "gokart",
+      "owner": "praetorian-inc",
+      "full_name": "praetorian-inc/gokart",
+      "description": "A static analysis tool for securing Go code",
+      "primary_language": "Go",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 2160,
+      "topics": [
+        "golang",
+        "security",
+        "static-code-analysis",
+        "static-analysis",
+        "security-tools"
+      ]
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-01-23",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-systeminit-si",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/systeminit/si",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "si",
+      "owner": "systeminit",
+      "full_name": "systeminit/si",
+      "description": "The System Initiative software",
+      "primary_language": "Rust",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 1802,
+      "homepage": "https://systeminit.com"
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2026-02-06",
+      "last_star_update": "2026-06-17",
+      "quality_score": 68
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-eBay-akutan",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/eBay/akutan",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "akutan",
+      "owner": "eBay",
+      "full_name": "eBay/akutan",
+      "description": "A distributed knowledge graph store",
+      "primary_language": "Go",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 1655,
+      "topics": [
+        "go",
+        "graph",
+        "rdf",
+        "sparql"
+      ]
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2019-07-18",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-daveshap-ACE_Framework",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/daveshap/ACE_Framework",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "ACE_Framework",
+      "owner": "daveshap",
+      "full_name": "daveshap/ACE_Framework",
+      "description": "ACE (Autonomous Cognitive Entities) - 100% local and open source autonomous agents",
+      "primary_language": "Python",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 1501
+    },
+    "classification": {
+      "language_category": "Python",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-03-17",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-Harvey-OS-harvey",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/Harvey-OS/harvey",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "harvey",
+      "owner": "Harvey-OS",
+      "full_name": "Harvey-OS/harvey",
+      "description": "A distributed operating system",
+      "primary_language": "C",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 1448,
+      "topics": [
+        "operating-system",
+        "distributed-systems",
+        "harvey-os",
+        "c",
+        "plan9",
+        "harvey",
+        "wiki",
+        "hacktoberfest2020"
+      ],
+      "homepage": "https://harvey-os.org/"
+    },
+    "classification": {
+      "language_category": "C",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2022-07-29",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-briefercloud-layerform",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/briefercloud/layerform",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "layerform",
+      "owner": "briefercloud",
+      "full_name": "briefercloud/layerform",
+      "description": "Layerform helps engineers create reusable environment stacks using plain .tf files. Ideal for multiple \"staging\" environments.",
+      "primary_language": "Go",
+      "license": "GNU General Public License v3.0",
+      "license_spdx": "GPL-3.0",
+      "stars": 1207,
+      "topics": [
+        "dev-environment",
+        "developer-tools",
+        "devops",
+        "platform-engineering",
+        "sre",
+        "terraform"
+      ],
+      "homepage": "https://layerform.dev"
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-12-26",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-curv3d-curv",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/curv3d/curv",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "curv",
+      "owner": "curv3d",
+      "full_name": "curv3d/curv",
+      "description": "a language for making art using mathematics",
+      "primary_language": "C++",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 1167,
+      "topics": [
+        "signed-distance-field",
+        "function-representation",
+        "solid-modeling",
+        "functional-language",
+        "language",
+        "csg",
+        "3d",
+        "creative-coding",
+        "generative-art"
+      ]
+    },
+    "classification": {
+      "language_category": "C++",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-09-27",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-blazegraph-database",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/blazegraph/database",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "database",
+      "owner": "blazegraph",
+      "full_name": "blazegraph/database",
+      "description": "Blazegraph High Performance Graph Database",
+      "primary_language": "Java",
+      "license": "GNU General Public License v2.0",
+      "license_spdx": "GPL-2.0",
+      "stars": 986,
+      "topics": [
+        "rdf",
+        "blazegraph",
+        "graph-database",
+        "sparql",
+        "tinkerpop"
+      ]
+    },
+    "classification": {
+      "language_category": "Java",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2023-04-16",
+      "last_star_update": "2026-06-17",
+      "quality_score": 48
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-zalando-nakadi",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/zalando/nakadi",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "nakadi",
+      "owner": "zalando",
+      "full_name": "zalando/nakadi",
+      "description": "A distributed event bus that implements a RESTful API abstraction on top of Kafka-like queues",
+      "primary_language": "Java",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 967,
+      "topics": [
+        "java",
+        "apis",
+        "event-bus",
+        "restful",
+        "microservices",
+        "postgresql",
+        "kafka",
+        "java-8",
+        "data-infrastructure"
+      ],
+      "homepage": "https://nakadi.io"
+    },
+    "classification": {
+      "language_category": "Java",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-04-11",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-hyperledger-fabric-sdk-go",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/hyperledger/fabric-sdk-go",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "fabric-sdk-go",
+      "owner": "hyperledger",
+      "full_name": "hyperledger/fabric-sdk-go",
+      "description": "",
+      "primary_language": "Go",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 909,
+      "topics": [
+        "hyperledger-fabric",
+        "go",
+        "distributed-ledger",
+        "blockchain",
+        "hyperledger"
+      ],
+      "homepage": "https://wiki.hyperledger.org/display/fabric"
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-04-25",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-libsql-sqld",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/libsql/sqld",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "sqld",
+      "owner": "libsql",
+      "full_name": "libsql/sqld",
+      "description": "LibSQL with extended capabilities like HTTP protocol, replication, and more.",
+      "primary_language": "Unknown",
+      "stars": 891,
+      "topics": [
+        "database",
+        "rust",
+        "serverless",
+        "sqlite"
+      ],
+      "homepage": "https://libsql.org"
+    },
+    "classification": {
+      "language_category": "Unknown",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-10-17",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-awslabs-goformation",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/awslabs/goformation",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "goformation",
+      "owner": "awslabs",
+      "full_name": "awslabs/goformation",
+      "description": "GoFormation is a Go library for working with CloudFormation templates.",
+      "primary_language": "Go",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 847,
+      "topics": [
+        "cloudformation",
+        "golang",
+        "aws",
+        "parser",
+        "aws-sam",
+        "aws-cloudformation"
+      ]
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-10-11",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-spotify-heroic",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/spotify/heroic",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "heroic",
+      "owner": "spotify",
+      "full_name": "spotify/heroic",
+      "description": "The Heroic Time Series Database",
+      "primary_language": "Java",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 846,
+      "topics": [
+        "time-series",
+        "monitoring",
+        "ha",
+        "elasticsearch",
+        "cassandra",
+        "tsdb",
+        "java",
+        "google-bigtable",
+        "google-pubsub"
+      ],
+      "homepage": "https://spotify.github.io/heroic/"
+    },
+    "classification": {
+      "language_category": "Java",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2021-03-26",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-nats-io-stan-go",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/nats-io/stan.go",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "stan.go",
+      "owner": "nats-io",
+      "full_name": "nats-io/stan.go",
+      "description": "NATS Streaming System",
+      "primary_language": "Go",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 707,
+      "homepage": "https://nats.io"
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2024-02-14",
+      "last_star_update": "2026-06-17",
+      "quality_score": 48
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-mozilla-tls-observatory",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/mozilla/tls-observatory",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "tls-observatory",
+      "owner": "mozilla",
+      "full_name": "mozilla/tls-observatory",
+      "description": "An observatory for TLS configurations, X509 certificates, and more.",
+      "primary_language": "Go",
+      "license": "Mozilla Public License 2.0",
+      "license_spdx": "MPL-2.0",
+      "stars": 545
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-09-23",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-ukncsc-secure-development-and-deployment",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/ukncsc/secure-development-and-deployment",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "secure-development-and-deployment",
+      "owner": "ukncsc",
+      "full_name": "ukncsc/secure-development-and-deployment",
+      "description": "NCSC Guidance for secure development and deployment",
+      "primary_language": "Unknown",
+      "stars": 442
+    },
+    "classification": {
+      "language_category": "Unknown",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2017-11-23",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-amazon-science-RefChecker",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/amazon-science/RefChecker",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "RefChecker",
+      "owner": "amazon-science",
+      "full_name": "amazon-science/RefChecker",
+      "description": "RefChecker provides automatic checking pipeline and benchmark dataset for detecting fine-grained hallucinations generated by Large Language Models.",
+      "primary_language": "Python",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 433,
+      "topics": [
+        "factuality",
+        "hallucination",
+        "llms"
+      ]
+    },
+    "classification": {
+      "language_category": "Python",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2025-05-16",
+      "last_star_update": "2026-06-17",
+      "quality_score": 33
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-OWASP-threat-model-cookbook",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/OWASP/threat-model-cookbook",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "threat-model-cookbook",
+      "owner": "OWASP",
+      "full_name": "OWASP/threat-model-cookbook",
+      "description": "This project is about creating and publishing threat model examples.",
+      "primary_language": "Python",
+      "license": "Other",
+      "license_spdx": "NOASSERTION",
+      "stars": 428,
+      "topics": [
+        "threat-models",
+        "threat-model",
+        "appsec",
+        "threat-modeling",
+        "threat-modelling"
+      ],
+      "homepage": "https://owasp.org/www-project-threat-model-cookbook/"
+    },
+    "classification": {
+      "language_category": "Python",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2021-11-10",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-strands-agents-agent-builder",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/strands-agents/agent-builder",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "agent-builder",
+      "owner": "strands-agents",
+      "full_name": "strands-agents/agent-builder",
+      "description": "An example agent demonstrating streaming, tool use, and interactivity from your terminal. This agent builder can help you to build your own agents and tools.",
+      "primary_language": "Python",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 419,
+      "topics": [
+        "agentic",
+        "agentic-ai",
+        "agents",
+        "ai",
+        "anthropic",
+        "autonomous-agents",
+        "genai",
+        "litellm",
+        "llm",
+        "machine-learning",
+        "mcp",
+        "multi-agent-systems",
+        "ollama",
+        "opentelemetry",
+        "python",
+        "bedrock",
+        "llama",
+        "openai",
+        "strands-agents"
+      ],
+      "homepage": "https://strandsagents.com"
+    },
+    "classification": {
+      "language_category": "Python",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2026-05-12",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-rancher-archives-dapper",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/rancher-archives/dapper",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "dapper",
+      "owner": "rancher-archives",
+      "full_name": "rancher-archives/dapper",
+      "description": "Docker build wrapper",
+      "primary_language": "Go",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 377
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-07-18",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-taironas-tinygraphs",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/taironas/tinygraphs",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "tinygraphs",
+      "owner": "taironas",
+      "full_name": "taironas/tinygraphs",
+      "description": "avatar generator web service",
+      "primary_language": "Go",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 341,
+      "homepage": "http://tinygraphs.com/"
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-06-14",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-hyperledger-archives-ursa",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/hyperledger-archives/ursa",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "ursa",
+      "owner": "hyperledger-archives",
+      "full_name": "hyperledger-archives/ursa",
+      "description": "Hyperledger Ursa (a shared cryptographic library) has moved to end-of-life status, with the components of Ursa still in use moved to their relevant Hyperledger projects (AnonCreds, Indy, Aries and Iroha).",
+      "primary_language": "Rust",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 325,
+      "homepage": "https://wiki.hyperledger.org/display/ursa"
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-01-24",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-pingcap-dumpling",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/pingcap/dumpling",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "dumpling",
+      "owner": "pingcap",
+      "full_name": "pingcap/dumpling",
+      "description": "Dumpling is a fast, easy-to-use tool written by Go for dumping data from the database(MySQL, TiDB...) to local/cloud(S3, GCP...) in multifarious formats(SQL, CSV...).",
+      "primary_language": "Go",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 280,
+      "topics": [
+        "sql",
+        "sql-dump",
+        "mysql",
+        "mysqldump",
+        "tidb",
+        "go",
+        "dump",
+        "csv",
+        "backup",
+        "library",
+        "hacktoberfest"
+      ]
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-02-15",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-awslabs-aws-ddk",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/awslabs/aws-ddk",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "aws-ddk",
+      "owner": "awslabs",
+      "full_name": "awslabs/aws-ddk",
+      "description": "An open source development framework to help you build data workflows and modern data architecture on AWS.",
+      "primary_language": "TypeScript",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 271,
+      "topics": [
+        "aws",
+        "dataops",
+        "dataengineering",
+        "python"
+      ],
+      "homepage": "https://awslabs.github.io/aws-ddk/"
+    },
+    "classification": {
+      "language_category": "TypeScript",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2026-02-09",
+      "last_star_update": "2026-06-17",
+      "quality_score": 33
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-jplatte-cargo-depgraph",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/jplatte/cargo-depgraph",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "cargo-depgraph",
+      "owner": "jplatte",
+      "full_name": "jplatte/cargo-depgraph",
+      "description": "Creates graphviz dependency graphs for Rust projects that use Cargo",
+      "primary_language": "Rust",
+      "stars": 224,
+      "topics": [
+        "rust",
+        "cargo-plugin"
+      ]
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2026-05-13",
+      "last_star_update": "2026-06-17",
+      "quality_score": 33
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-hyperledger-archives-grid",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/hyperledger-archives/grid",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "grid",
+      "owner": "hyperledger-archives",
+      "full_name": "hyperledger-archives/grid",
+      "description": "Grid has moved to end-of-life status.",
+      "primary_language": "Rust",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 206,
+      "topics": [
+        "hyperledger",
+        "hyperledger-grid"
+      ],
+      "homepage": "https://grid.hyperledger.org/"
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-03-23",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-microsoft-data-protection-mapping-project",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/microsoft/data-protection-mapping-project",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "data-protection-mapping-project",
+      "owner": "microsoft",
+      "full_name": "microsoft/data-protection-mapping-project",
+      "description": "Open Source Data Protection/Privacy Regulatory Mapping Project",
+      "primary_language": "TypeScript",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 195,
+      "topics": [
+        "iso27701",
+        "gdpr",
+        "ccpa",
+        "privacy",
+        "data-protection",
+        "standards",
+        "legaltech",
+        "security",
+        "iso27001",
+        "iso27002"
+      ]
+    },
+    "classification": {
+      "language_category": "TypeScript",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-06-11",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-aws-solutions-performance-dashboard-on-aws",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/aws-solutions/performance-dashboard-on-aws",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "performance-dashboard-on-aws",
+      "owner": "aws-solutions",
+      "full_name": "aws-solutions/performance-dashboard-on-aws",
+      "description": "A simple cost-effective web application to build and publish dashboards.",
+      "primary_language": "TypeScript",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 175,
+      "topics": [
+        "public-sector",
+        "serverless",
+        "aws",
+        "typescript",
+        "reactjs",
+        "nodejs",
+        "visualize-data",
+        "aws-cdk",
+        "a11y"
+      ]
+    },
+    "classification": {
+      "language_category": "TypeScript",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-11-22",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-awslabs-aws-orbit-workbench",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/awslabs/aws-orbit-workbench",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "aws-orbit-workbench",
+      "owner": "awslabs",
+      "full_name": "awslabs/aws-orbit-workbench",
+      "description": "A Data Platform built for AWS, powered by Kubernetes.",
+      "primary_language": "Python",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 147,
+      "topics": [
+        "kubernetes",
+        "eks",
+        "jupyter",
+        "jupyterhub",
+        "data-analysis",
+        "datalake",
+        "mach",
+        "orbit-workbench",
+        "gpu",
+        "eks-cluster",
+        "aws",
+        "dataengineering",
+        "redshift",
+        "analytics",
+        "workbench"
+      ],
+      "homepage": "https://awslabs.github.io/aws-orbit-workbench/"
+    },
+    "classification": {
+      "language_category": "Python",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-07-24",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-kbknapp-cargo-count",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/kbknapp/cargo-count",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "cargo-count",
+      "owner": "kbknapp",
+      "full_name": "kbknapp/cargo-count",
+      "description": "a cargo subcommand for counting lines of code in Rust projects",
+      "primary_language": "Rust",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 128
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-07-02",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-atrocore-atrodam",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/atrocore/atrodam",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "atrodam",
+      "owner": "atrocore",
+      "full_name": "atrocore/atrodam",
+      "description": "AtroDAM is an open-source digital asset management system (DAM) of a new generation.",
+      "primary_language": "PHP",
+      "license": "GNU General Public License v3.0",
+      "license_spdx": "GPL-3.0",
+      "stars": 126,
+      "topics": [
+        "dam",
+        "digital-asset-management",
+        "digitalassetmanagement",
+        "digitalassets",
+        "digital-assets",
+        "mam",
+        "mediaassetmanagement",
+        "media-asset-management",
+        "spa",
+        "single-page-application",
+        "web-application"
+      ],
+      "homepage": "https://atrodam.com"
+    },
+    "classification": {
+      "language_category": "PHP",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-05-07",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-tursodatabase-libsql-client-py",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/tursodatabase/libsql-client-py",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "libsql-client-py",
+      "owner": "tursodatabase",
+      "full_name": "tursodatabase/libsql-client-py",
+      "description": "Python SDK for libSQL",
+      "primary_language": "Python",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 80,
+      "topics": [
+        "client",
+        "libsql",
+        "python",
+        "sqlite"
+      ],
+      "homepage": "https://libsql.org/libsql-client-py/"
+    },
+    "classification": {
+      "language_category": "Python",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-06-10",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-cdaniel-doctrine",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/cdaniel/doctrine",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "doctrine",
+      "owner": "cdaniel",
+      "full_name": "cdaniel/doctrine",
+      "description": "A very simple tool for visualising how competitive is the company in the light of Simon Wardley's Doctrine.",
+      "primary_language": "JavaScript",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 62,
+      "topics": [
+        "simon-wardley-doctrine",
+        "doctrine",
+        "wardley-maps",
+        "wardleymaps",
+        "wardley"
+      ],
+      "homepage": "http://doctrine.wardleymaps.com/"
+    },
+    "classification": {
+      "language_category": "JavaScript",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2026-06-02",
+      "last_star_update": "2026-06-17",
+      "quality_score": 18
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-indeedeng-fibtest",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/indeedeng/fibtest",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "fibtest",
+      "owner": "indeedeng",
+      "full_name": "indeedeng/fibtest",
+      "description": "",
+      "primary_language": "C",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 58
+    },
+    "classification": {
+      "language_category": "C",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-03-18",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-nextcloud-weather",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/nextcloud/weather",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "weather",
+      "owner": "nextcloud",
+      "full_name": "nextcloud/weather",
+      "description": "⛅️ Weather app for Nextcloud",
+      "primary_language": "JavaScript",
+      "license": "GNU Affero General Public License v3.0",
+      "license_spdx": "AGPL-3.0",
+      "stars": 51,
+      "topics": [
+        "php",
+        "nextcloud",
+        "openweathermap"
+      ]
+    },
+    "classification": {
+      "language_category": "JavaScript",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-09-25",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-lucasepe-g2d",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/lucasepe/g2d",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "g2d",
+      "owner": "lucasepe",
+      "full_name": "lucasepe/g2d",
+      "description": "Craft beautiful geometric art using code.",
+      "primary_language": "Go",
+      "license": "Mozilla Public License 2.0",
+      "license_spdx": "MPL-2.0",
+      "stars": 46,
+      "topics": [
+        "golang",
+        "graphics2d",
+        "interpreter",
+        "programming-language",
+        "scripting-language",
+        "canvas",
+        "geometry"
+      ]
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2020-12-28",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-CircleCI-Archived-CircleCI-Training-Koans",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/CircleCI-Archived/CircleCI-Training-Koans",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "CircleCI-Training-Koans",
+      "owner": "CircleCI-Archived",
+      "full_name": "CircleCI-Archived/CircleCI-Training-Koans",
+      "description": "A set of puzzles to be completed to help familiarize yourself with CircleCI",
+      "primary_language": "Shell",
+      "stars": 41
+    },
+    "classification": {
+      "language_category": "Shell",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-02-16",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-gregoryv-draw",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/gregoryv/draw",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "draw",
+      "owner": "gregoryv",
+      "full_name": "gregoryv/draw",
+      "description": "Generate software design diagrams in Go",
+      "primary_language": "Go",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 39,
+      "topics": [
+        "go",
+        "svg",
+        "diagram",
+        "graph",
+        "design",
+        "sequence-diagram",
+        "class-diagram",
+        "activity-diagram"
+      ],
+      "homepage": "https://gregoryv.github.io/draw"
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2025-12-21",
+      "last_star_update": "2026-06-17",
+      "quality_score": 18
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-chirag127-Clear-Thought-MCP-server",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/chirag127/Clear-Thought-MCP-server",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "Clear-Thought-MCP-server",
+      "owner": "chirag127",
+      "full_name": "chirag127/Clear-Thought-MCP-server",
+      "description": "",
+      "primary_language": "JavaScript",
+      "stars": 32
+    },
+    "classification": {
+      "language_category": "JavaScript",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-05-15",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-nats-io-latency-tests",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/nats-io/latency-tests",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "latency-tests",
+      "owner": "nats-io",
+      "full_name": "nats-io/latency-tests",
+      "description": "Latency and Throughput Test Framework",
+      "primary_language": "HCL",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 19
+    },
+    "classification": {
+      "language_category": "HCL",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2020-11-29",
+      "last_star_update": "2026-06-17",
+      "quality_score": 18
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-atrocore-atropm",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/atrocore/atropm",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "atropm",
+      "owner": "atrocore",
+      "full_name": "atrocore/atropm",
+      "description": "AtroPM is a simple, but powerful, configurable, open-source Project Management Software, inspired by Github and Gitlab.",
+      "primary_language": "PHP",
+      "license": "GNU General Public License v3.0",
+      "license_spdx": "GPL-3.0",
+      "stars": 18,
+      "topics": [
+        "projectmanagement",
+        "spa",
+        "singlepageapplication",
+        "open-source",
+        "opensource",
+        "issue-management",
+        "issue-tracker",
+        "issue-tracking-system",
+        "kanban",
+        "kanban-board",
+        "kanban-board-application",
+        "kanban-application"
+      ],
+      "homepage": "https://atrocore.com"
+    },
+    "classification": {
+      "language_category": "PHP",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-01-26",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-mandala-ui-mandala",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/mandala-ui/mandala",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "mandala",
+      "owner": "mandala-ui",
+      "full_name": "mandala-ui/mandala",
+      "description": "React UI Components built with Functional CSS",
+      "primary_language": "JavaScript",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 17,
+      "homepage": "https://mandala-ui.github.io/mandala/"
+    },
+    "classification": {
+      "language_category": "JavaScript",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2022-03-15",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-awslabs-yesiscan",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/awslabs/yesiscan",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "yesiscan",
+      "owner": "awslabs",
+      "full_name": "awslabs/yesiscan",
+      "description": "Automatic license scanning and reports!",
+      "primary_language": "Go",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 17,
+      "topics": [
+        "copyright",
+        "golang",
+        "license"
+      ]
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-02-28",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-qdm12-goshutdown",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/qdm12/goshutdown",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "goshutdown",
+      "owner": "qdm12",
+      "full_name": "qdm12/goshutdown",
+      "description": "Go library to shutdown your goroutines gracefully and in a timely manner",
+      "primary_language": "Go",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 13
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-02-27",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-lucas-santoni-mandala-c-sdl2",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/lucas-santoni/mandala-c-sdl2",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "mandala-c-sdl2",
+      "owner": "lucas-santoni",
+      "full_name": "lucas-santoni/mandala-c-sdl2",
+      "description": "Using the C language, the SDL2 library and some modulo operations to draw cool mandalas.",
+      "primary_language": "C",
+      "stars": 4,
+      "topics": [
+        "mandala",
+        "sdl2-library",
+        "draw",
+        "graphical",
+        "modulo",
+        "maths"
+      ]
+    },
+    "classification": {
+      "language_category": "C",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2017-10-18",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  }
+]

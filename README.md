@@ -13,26 +13,26 @@ git clone <repository-url>
 cd omnidatum
 cargo build --release
 
-# Binary is at target/release/omnidatum-processor
+# Binary is at target/release/repoquery
 ```
 
 ## Quick Start
 
 ```bash
 # 1. Configure GitHub credentials
-cargo run -p od-cli -- configure
+cargo run -p repoquery -- configure
 
 # 2. Sync starred repos from GitHub
-cargo run -p od-cli -- sync
+cargo run -p repoquery -- sync
 
 # 3. Import into SQLite for fast queries
-cargo run -p od-cli -- import --from data/canonical/repositories.yml --to data/omnidatum.db
+cargo run -p repoquery -- import --from data/canonical/repositories.yml --to data/omnidatum.db
 
 # 4. Generate documentation
-cargo run -p od-cli -- generate
+cargo run -p repoquery -- generate
 
 # 5. Launch interactive TUI
-cargo run -p od-cli -- tui
+cargo run -p repoquery -- tui
 ```
 
 ## Features
@@ -83,6 +83,29 @@ cargo run -p od-cli -- tui
 - Tag filter cycling and fork status display
 - Built with ratatui and crossterm
 
+### Query & Search
+- Multi-filter repository queries (language, stars, owner, license, topic)
+- Full-text search across names, descriptions, and topics
+- Multiple output formats: table, JSON, Markdown, CSV
+- Configurable sorting and limits
+
+### Activity Monitoring
+- Classify repos as Active, Maintained, Stale, or Abandoned
+- Configurable time thresholds
+- Trending detection by star growth rate
+- ASCII histogram charts
+
+### Security Hardening
+- Token redaction in all log output
+- SQLite integrity checks on startup
+- Path traversal protection
+- Cargo audit in CI pipeline
+- Clippy deny-level lints
+
+### Shell Completions & Man Page
+- Generate completions for bash, zsh, fish, and powershell
+- Man page generation via `repoquery man`
+
 ### Structured Logging
 - Tracing-based logging with configurable levels
 - Debug output for troubleshooting
@@ -100,15 +123,20 @@ cargo run -p od-cli -- tui
 | `migrate-credentials` | Migrate credentials from legacy location |
 | `sync` | Sync repository metadata from external sources |
 | `status` | Show sync status and system health |
-| `import` | Import data from one store format to another |
-| `export` | Export data from one store format to another |
+| `import` | Import data between store formats (YAML ↔ SQLite) |
+| `export` | Export data between store formats (SQLite ↔ YAML) |
 | `collections` | Manage repository collections (list, create, show, add, remove, delete, auto-generate) |
 | `tui` | Interactive terminal UI for browsing and managing repositories |
+| `config` | Manage configuration (init, show, set) |
+| `activity` | Analyze repository activity (active, stale, abandoned, trending) |
+| `query` | Query repositories with filters (list, search, show, topics, languages) |
 | `repo` | Manage individual repository metadata (tag, untag, note, show) |
+| `completions` | Generate shell completions (bash, zsh, fish, powershell) |
+| `man` | Generate man page |
 
 ## Architecture
 
-7-crate workspace for modularity and reusability:
+7-crate workspace with strict one-way dependency flow:
 
 ```
 od-core       → Pure types, config, validators, parsers, merge
@@ -117,10 +145,10 @@ od-sync       → Sync orchestrator, adapters, cache, progress
 od-validate   → Validation framework and rules
 od-generate   → Tera-based markdown generation
 od-graph      → petgraph cross-reference graph + navigator
-od-cli        → Binary with 14 command handlers
+repoquery     → Binary with 14 command handlers
 ```
 
-**Dependency flow**: od-core ← od-store, od-sync, od-validate, od-generate, od-graph ← od-cli
+**Dependency flow**: od-core ← od-store, od-sync, od-validate, od-generate, od-graph ← repoquery
 
 ## Configuration
 
@@ -141,14 +169,18 @@ Set up credentials via one of three methods:
 
 3. **OS keychain** (macOS Keychain, Windows Credential Manager, Linux Secret Service):
    ```bash
-   cargo run -p od-cli -- configure
+   cargo run -p repoquery -- configure
    ```
 
-Run `cargo run -p od-cli -- configure --show` to view current configuration.
+Run `cargo run -p repoquery -- configure --show` to view current configuration.
 
 ## Documentation
 
 - **[Architecture](./docs/ARCHITECTURE.md)** — System design and module overview
+- **[CLI Command Reference](./docs/CLI_COMMAND_REFERENCE.md)** — Full command tree and options
+- **[Configuration](./docs/CONFIGURATION.md)** — Config file, env vars, credential setup
+- **[Storage Modes](./docs/STORAGE_MODES.md)** — YAML vs SQLite vs Dual mode
+- **[Security Practices](./docs/SECURITY_PRACTICES.md)** — Token protection, audit, linting
 - **[Data Sync Guide](./docs/DATA_SYNC.md)** — Complete sync setup and usage
 - **[API Reference](./docs/API_REFERENCE.md)** — CLI commands and library API
 - **[Development](./docs/DEVELOPMENT.md)** — Contributing and development setup
@@ -157,9 +189,9 @@ Run `cargo run -p od-cli -- configure --show` to view current configuration.
 ## Project Status
 
 - **Repositories**: 845 tracked (797 active, 48 archived)
-- **Tests**: 127 passing
+- **Tests**: 171 passing
 - **Performance**: Sub-second processing for full dataset
-- **Phases**: 0–8 complete (workspace, core, store, sync, validate, generate, graph, CLI, relations, collections, tags, TUI)
+- **Phases**: 0–8 + security hardening, config overhaul, query commands, activity monitoring, testing infrastructure, documentation (6 phases ported from RepoSQL specs)
 
 ## License
 

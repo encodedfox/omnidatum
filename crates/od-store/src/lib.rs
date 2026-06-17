@@ -1,17 +1,20 @@
-//! od-store: trait-based persistence layer (SQLite + YAML).
+//! od-store: trait-based persistence layer (SQLite + YAML + Dual).
 
+pub mod dual;
 pub mod error;
 pub mod sqlite;
 pub mod traits;
 pub mod yaml;
 
+pub use dual::DualStore;
 pub use error::StoreError;
 pub use sqlite::SqliteStore;
-pub use traits::{RepoFilter, RepoStore};
+pub use traits::{RepoFilter, RepoStore, SortField, SortOrder};
 pub use yaml::YamlStore;
 
-use anyhow::{bail, Result};
+use anyhow::{bail, Context, Result};
 use od_core::CanonicalData;
+use od_core::config::StorageMode;
 use std::path::Path;
 
 /// Open a store based on file extension.
@@ -24,6 +27,29 @@ pub fn open_store(path: &Path) -> Result<Box<dyn RepoStore>> {
             "Cannot determine store type from path '{}'. Use .db/.sqlite or .yml/.yaml",
             path.display()
         ),
+    }
+}
+
+/// Open a store based on storage mode config.
+/// `StorageMode::Yaml` → YamlStore; `StorageMode::Sqlite` → SqliteStore;
+/// `StorageMode::Dual` → DualStore.
+pub fn open_store_with_mode(
+    mode: &StorageMode,
+    sqlite_path: &Path,
+    yaml_path: &Path,
+) -> Result<Box<dyn RepoStore>> {
+    match mode {
+        StorageMode::Yaml => Ok(Box::new(YamlStore::new(yaml_path))),
+        StorageMode::Sqlite => Ok(Box::new(SqliteStore::new(sqlite_path)?)),
+        StorageMode::Dual => {
+            let dual = DualStore::new(sqlite_path, yaml_path)
+                .context("Failed to initialize dual store")?;
+            // Seed SQLite from YAML on first use (SQLite DB doesn't exist yet)
+            if !sqlite_path.exists() && yaml_path.exists() {
+                dual.rebuild_sqlite_from_yaml()?;
+            }
+            Ok(Box::new(dual))
+        }
     }
 }
 

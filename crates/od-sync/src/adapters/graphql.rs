@@ -85,7 +85,7 @@ pub struct GitHubGraphQL {
 impl GitHubGraphQL {
     pub fn new(token: String) -> Result<Self> {
         let client = Client::builder()
-            .user_agent("omnidatum-processor/0.1")
+            .user_agent("repoquery/0.1")
             .build()
             .context("Failed to build reqwest client")?;
         Ok(Self { client, token })

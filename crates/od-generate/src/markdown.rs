@@ -22,6 +22,7 @@ struct TemplateRepo {
     has_migration: bool,
     migration_platform: Option<String>,
     migration_url: Option<String>,
+    tags: Vec<String>,
 }
 
 /// Language section for template
@@ -137,6 +138,7 @@ impl MarkdownGenerator {
                         has_migration: !alt_urls.is_empty(),
                         migration_platform: alt_urls.first().map(|(p, _)| format!("{}", p)),
                         migration_url: alt_urls.first().map(|(_, u)| u.to_string()),
+                        tags: r.custom_tags.clone(),
                     }
                 })
                 .collect();
@@ -236,6 +238,7 @@ impl MarkdownGenerator {
                         has_migration: !alt_urls.is_empty(),
                         migration_platform: alt_urls.first().map(|(p, _)| format!("{}", p)),
                         migration_url: alt_urls.first().map(|(_, u)| u.to_string()),
+                        tags: r.custom_tags.clone(),
                     }
                 })
                 .collect();

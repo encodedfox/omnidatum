@@ -10,7 +10,7 @@ Total starred repositories: `{{ total_count }}`
 {%- for lang in languages %}
 ## {{ lang.name }}
 {% for repo in lang.repos -%}
-- [{{ repo.full_name }}]({{ repo.url }}) - {{ repo.description }}{% if repo.license %} \[*{{ repo.license }}*\]{% endif %} (⭐️{{ repo.stars }}){% if repo.is_archived %} *Archived!*{% endif %}{% if repo.has_migration %} [🔄→{{ repo.migration_platform }}]({{ repo.migration_url }}){% endif %}
+- [{{ repo.full_name }}]({{ repo.url }}) - {{ repo.description }}{% if repo.license %} \[*{{ repo.license }}*\]{% endif %} (⭐️{{ repo.stars }}){% if repo.is_archived %} *Archived!*{% endif %}{% if repo.has_migration %} [🔄→{{ repo.migration_platform }}]({{ repo.migration_url }}){% endif %}{% for tag in repo.tags %} `{{ tag }}`{% endfor %}
 {% endfor %}
 {% endfor %}
 {%- if include_stats %}

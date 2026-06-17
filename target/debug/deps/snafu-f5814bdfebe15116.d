@@ -1,0 +1,12 @@
+/Users/joemelfi/projects/repoquery/target/debug/deps/snafu-f5814bdfebe15116.d: /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/lib.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/backtrace_impl_std.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/once_bool.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/error_chain.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/report.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/boxed_impls.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/Snafu.md /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/report.md
+
+/Users/joemelfi/projects/repoquery/target/debug/deps/libsnafu-f5814bdfebe15116.rmeta: /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/lib.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/backtrace_impl_std.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/once_bool.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/error_chain.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/report.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/boxed_impls.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/Snafu.md /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/report.md
+
+/Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/lib.rs:
+/Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/backtrace_impl_std.rs:
+/Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/once_bool.rs:
+/Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/error_chain.rs:
+/Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/report.rs:
+/Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/boxed_impls.rs:
+/Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/Snafu.md:
+/Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/snafu-0.8.9/src/report.md:

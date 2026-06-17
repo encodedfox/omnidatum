@@ -1,4 +1,4 @@
-use crate::traits::{RepoFilter, RepoStore};
+use crate::traits::{RepoFilter, RepoStore, SortField, SortOrder};
 use anyhow::Result;
 use od_core::{CanonicalData, Collection, Repository};
 use std::path::{Path, PathBuf};
@@ -39,34 +39,87 @@ impl RepoStore for YamlStore {
 
     fn list_repos(&self, filter: &RepoFilter) -> Result<Vec<Repository>> {
         let data = self.load_all()?;
-        Ok(data
+        let mut repos: Vec<Repository> = data
             .repositories
             .into_iter()
             .filter(|r| {
                 if let Some(lang) = &filter.language {
-                    if &r.metadata.primary_language != lang {
-                        return false;
-                    }
+                    if &r.metadata.primary_language != lang { return false; }
                 }
                 if let Some(archived) = filter.archived {
-                    if r.quality_metrics.archive_status != archived {
-                        return false;
-                    }
+                    if r.quality_metrics.archive_status != archived { return false; }
                 }
                 if let Some(min) = filter.min_stars {
-                    if r.metadata.stars < min {
-                        return false;
-                    }
+                    if r.metadata.stars < min { return false; }
+                }
+                if let Some(max) = filter.max_stars {
+                    if r.metadata.stars > max { return false; }
                 }
                 if let Some(src) = &filter.source {
                     let src_str = format!("{:?}", r.source).to_lowercase();
-                    if !src_str.contains(&src.to_lowercase()) {
-                        return false;
-                    }
+                    if !src_str.contains(&src.to_lowercase()) { return false; }
+                }
+                if let Some(ref tag) = filter.tag {
+                    if !r.custom_tags.iter().any(|t| t == tag) { return false; }
+                }
+                if let Some(ref owner) = filter.owner {
+                    if r.metadata.owner.to_lowercase() != owner.to_lowercase() { return false; }
+                }
+                if let Some(ref license) = filter.license {
+                    if r.metadata.license_spdx.as_deref().map(|l| l.to_lowercase()) != Some(license.to_lowercase()) { return false; }
+                }
+                if let Some(ref topic) = filter.topic {
+                    if !r.metadata.topics.iter().any(|t| t.to_lowercase() == topic.to_lowercase()) { return false; }
+                }
+                if let Some(ref query) = filter.search_query {
+                    let q = query.to_lowercase();
+                    if !r.metadata.name.to_lowercase().contains(&q)
+                        && !r.metadata.description.to_lowercase().contains(&q)
+                        && !r.metadata.topics.iter().any(|t| t.to_lowercase().contains(&q))
+                    { return false; }
                 }
                 true
             })
-            .collect())
+            .collect();
+
+        // Sort
+        match filter.sort {
+            SortField::Stars => {
+                if filter.order == SortOrder::Asc {
+                    repos.sort_by_key(|r| r.metadata.stars);
+                } else {
+                    repos.sort_by(|a, b| b.metadata.stars.cmp(&a.metadata.stars));
+                }
+            }
+            SortField::Name => {
+                if filter.order == SortOrder::Asc {
+                    repos.sort_by(|a, b| a.metadata.name.cmp(&b.metadata.name));
+                } else {
+                    repos.sort_by(|a, b| b.metadata.name.cmp(&a.metadata.name));
+                }
+            }
+            SortField::Updated => {
+                if filter.order == SortOrder::Asc {
+                    repos.sort_by(|a, b| a.quality_metrics.last_star_update.cmp(&b.quality_metrics.last_star_update));
+                } else {
+                    repos.sort_by(|a, b| b.quality_metrics.last_star_update.cmp(&a.quality_metrics.last_star_update));
+                }
+            }
+            SortField::Created => {}
+            SortField::Quality => {
+                if filter.order == SortOrder::Asc {
+                    repos.sort_by_key(|r| r.quality_metrics.quality_score);
+                } else {
+                    repos.sort_by(|a, b| b.quality_metrics.quality_score.cmp(&a.quality_metrics.quality_score));
+                }
+            }
+        }
+
+        if let Some(limit) = filter.limit {
+            repos.truncate(limit);
+        }
+
+        Ok(repos)
     }
 
     fn count_repos(&self, filter: &RepoFilter) -> Result<usize> {

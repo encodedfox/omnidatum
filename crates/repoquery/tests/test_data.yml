@@ -1,0 +1,80 @@
+# Minimal test data for CLI e2e tests
+schema_version: "1.0"
+last_updated: "2024-12-10"
+generated_by: "repoquery-test"
+total_count: 3
+repositories:
+  - id: test-rust-repo
+    platforms:
+      - platform: github
+        url: "https://github.com/rust-lang/rust"
+        status: active
+        is_primary: true
+    metadata:
+      name: rust
+      owner: rust-lang
+      full_name: rust-lang/rust
+      description: A safe, concurrent, practical language
+      primary_language: Rust
+      license_spdx: MIT
+      stars: 95000
+      topics: [compiler, systems, rust]
+    classification:
+      language_category: Rust
+    quality_metrics:
+      archive_status: false
+      last_star_update: "2024-12-10"
+      quality_score: 95
+    source: git_hub_stars
+    added_date: "2023-01-01"
+    manually_curated: false
+
+  - id: test-go-repo
+    platforms:
+      - platform: github
+        url: "https://github.com/golang/go"
+        status: active
+        is_primary: true
+    metadata:
+      name: go
+      owner: golang
+      full_name: golang/go
+      description: The Go programming language
+      primary_language: Go
+      license_spdx: BSD-3-Clause
+      stars: 120000
+      topics: [go, golang, compiler]
+    classification:
+      language_category: Go
+    quality_metrics:
+      archive_status: false
+      last_star_update: "2024-12-10"
+      quality_score: 97
+    source: git_hub_stars
+    added_date: "2023-01-01"
+    manually_curated: false
+
+  - id: test-js-repo
+    platforms:
+      - platform: github
+        url: "https://github.com/facebook/react"
+        status: active
+        is_primary: true
+    metadata:
+      name: react
+      owner: facebook
+      full_name: facebook/react
+      description: A JavaScript library for building user interfaces
+      primary_language: JavaScript
+      license_spdx: MIT
+      stars: 220000
+      topics: [react, javascript, frontend]
+    classification:
+      language_category: JavaScript
+    quality_metrics:
+      archive_status: false
+      last_star_update: "2024-12-10"
+      quality_score: 98
+    source: git_hub_stars
+    added_date: "2023-01-01"
+    manually_curated: false

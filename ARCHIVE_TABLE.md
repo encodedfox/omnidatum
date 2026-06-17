@@ -1,12 +1,14 @@
 # Awesome Starred Repos List
 
 Programmatically generated list of awesome starred repositories. Generate your own with [stargazer](https://github.com/encodedfox/stargazer)!
-Total starred repositories: `70`
+Total starred repositories: `85`
 
 ## Contents
 - [C](#c)
 - [C++](#c++)
+- [CSS](#css)
 - [Go](#go)
+- [HCL](#hcl)
 - [Haskell](#haskell)
 - [Java](#java)
 - [JavaScript](#javascript)
@@ -16,6 +18,7 @@ Total starred repositories: `70`
 - [PowerShell](#powershell)
 - [Python](#python)
 - [Rust](#rust)
+- [SCSS](#scss)
 - [Shell](#shell)
 - [TypeScript](#typescript)
 - [Unknown](#unknown)
@@ -24,10 +27,10 @@ Total starred repositories: `70`
 | Name  | Description | License | Stars |
 | ----- | -----| :---:|----:|
 | [lucas-santoni/mandala-c-sdl2](https://github.com/lucas-santoni/mandala-c-sdl2) | Using the C language, the SDL2 library and some modulo operations to draw cool mandalas. (*archived*) | - | ⭐️4 |
-| [hexchat/hexchat](https://github.com/hexchat/hexchat) | GTK+ IRC client (*archived*) | GNU General Public License v2.0 | ⭐️3237 |
+| [hexchat/hexchat](https://github.com/hexchat/hexchat) | GTK+ IRC client (*archived*) <sup>`ref:archived-tool`</sup> | GNU General Public License v2.0 | ⭐️3236 |
 | [indeedeng/fibtest](https://github.com/indeedeng/fibtest) |  (*archived*) | Apache License 2.0 | ⭐️58 |
-| [kkos/oniguruma](https://github.com/kkos/oniguruma) | regular expression library (*archived*) | Other | ⭐️2524 |
-| [Harvey-OS/harvey](https://github.com/Harvey-OS/harvey) | A distributed operating system (*archived*) | MIT License | ⭐️1449 |
+| [kkos/oniguruma](https://github.com/kkos/oniguruma) | regular expression library (*archived*) <sup>`ref:archived-tool`</sup> | Other | ⭐️2525 |
+| [Harvey-OS/harvey](https://github.com/Harvey-OS/harvey) | A distributed operating system (*archived*) <sup>`ref:archived-tool`</sup> | MIT License | ⭐️1448 |
 
 
 **[⬆ back to top](#contents)**
@@ -36,7 +39,15 @@ Total starred repositories: `70`
 | Name  | Description | License | Stars |
 | ----- | -----| :---:|----:|
 | [Dale-M/dmbcs-trader-desk](https://github.com/Dale-M/dmbcs-trader-desk) | Yet another (fully open source) stock market charting application; C++ on Linux using Alpha Vantage market data back-end. | Other | ⭐️8 |
-| [curv3d/curv](https://github.com/curv3d/curv) | a language for making art using mathematics (*archived*) | Apache License 2.0 | ⭐️1167 |
+| [curv3d/curv](https://github.com/curv3d/curv) | a language for making art using mathematics (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️1167 |
+
+
+**[⬆ back to top](#contents)**
+
+## CSS
+| Name  | Description | License | Stars |
+| ----- | -----| :---:|----:|
+| [mozilla/Fira](https://github.com/mozilla/Fira) | DEPRECATED - Mozilla's new typeface, used in Firefox OS (*archived*) <sup>`ref:archived-tool`</sup> | Other | ⭐️5157 |
 
 
 **[⬆ back to top](#contents)**
@@ -44,26 +55,37 @@ Total starred repositories: `70`
 ## Go
 | Name  | Description | License | Stars |
 | ----- | -----| :---:|----:|
+| [minio/minio](https://github.com/minio/minio) | MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license. (*archived*) | GNU Affero General Public License v3.0 | ⭐️61206 |
 | [giagiannis/data-profiler](https://github.com/giagiannis/data-profiler) | Data profiler is an attempt to model the behavior of a given operator for a set of datasets. | Apache License 2.0 | ⭐️3 |
+| [gregoryv/draw](https://github.com/gregoryv/draw) | Generate software design diagrams in Go (*archived*) <sup>`ref:architecture`</sup> | MIT License | ⭐️39 |
 | [AnthonyHewins/osg](https://github.com/AnthonyHewins/osg) | open source =/= free | - | ⭐️1 |
-| [briefercloud/layerform](https://github.com/briefercloud/layerform) | Layerform helps engineers create reusable environment stacks using plain .tf files. Ideal for multiple "staging" environments. (*archived*) | GNU General Public License v3.0 | ⭐️1207 |
-| [sourcegraph/sourcegraph-public-snapshot](https://github.com/sourcegraph/sourcegraph-public-snapshot) | Code AI platform with Code Search & Cody (*archived*) | Other | ⭐️10288 |
-| [praetorian-inc/gokart](https://github.com/praetorian-inc/gokart) | A static analysis tool for securing Go code (*archived*) | Apache License 2.0 | ⭐️2160 |
-| [golang/mock](https://github.com/golang/mock) | GoMock is a mocking framework for the Go programming language. (*archived*) | Apache License 2.0 | ⭐️9361 |
+| [nats-io/stan.go](https://github.com/nats-io/stan.go) | NATS Streaming System (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️707 |
+| [briefercloud/layerform](https://github.com/briefercloud/layerform) | Layerform helps engineers create reusable environment stacks using plain .tf files. Ideal for multiple "staging" environments. (*archived*) <sup>`ref:archived-tool`</sup> | GNU General Public License v3.0 | ⭐️1207 |
+| [sourcegraph/sourcegraph-public-snapshot](https://github.com/sourcegraph/sourcegraph-public-snapshot) | Code AI platform with Code Search & Cody (*archived*) <sup>`ref:archived-tool`</sup> | Other | ⭐️10289 |
+| [praetorian-inc/gokart](https://github.com/praetorian-inc/gokart) | A static analysis tool for securing Go code (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️2160 |
+| [golang/mock](https://github.com/golang/mock) | GoMock is a mocking framework for the Go programming language. (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️9361 |
 | [awslabs/yesiscan](https://github.com/awslabs/yesiscan) | Automatic license scanning and reports! (*archived*) | Apache License 2.0 | ⭐️17 |
-| [pingcap/dumpling](https://github.com/pingcap/dumpling) | Dumpling is a fast, easy-to-use tool written by Go for dumping data from the database(MySQL, TiDB...) to local/cloud(S3, GCP...) in multifarious formats(SQL, CSV...). (*archived*) | Apache License 2.0 | ⭐️280 |
+| [pingcap/dumpling](https://github.com/pingcap/dumpling) | Dumpling is a fast, easy-to-use tool written by Go for dumping data from the database(MySQL, TiDB...) to local/cloud(S3, GCP...) in multifarious formats(SQL, CSV...). (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️280 |
 | [qdm12/goshutdown](https://github.com/qdm12/goshutdown) | Go library to shutdown your goroutines gracefully and in a timely manner (*archived*) | MIT License | ⭐️13 |
-| [rebuy-de/aws-nuke](https://github.com/rebuy-de/aws-nuke) | Nuke a whole AWS account and delete all its resources. (*archived*) | MIT License | ⭐️5804 |
-| [hyperledger/fabric-sdk-go](https://github.com/hyperledger/fabric-sdk-go) |  (*archived*) | Apache License 2.0 | ⭐️910 |
-| [lucasepe/g2d](https://github.com/lucasepe/g2d) | Craft beautiful geometric art using code. (*archived*) | Mozilla Public License 2.0 | ⭐️46 |
-| [awslabs/goformation](https://github.com/awslabs/goformation) | GoFormation is a Go library for working with CloudFormation templates. (*archived*) | Apache License 2.0 | ⭐️847 |
-| [eBay/akutan](https://github.com/eBay/akutan) | A distributed knowledge graph store (*archived*) | Apache License 2.0 | ⭐️1654 |
+| [rebuy-de/aws-nuke](https://github.com/rebuy-de/aws-nuke) | Nuke a whole AWS account and delete all its resources. (*archived*) <sup>`ref:archived-tool`</sup> | MIT License | ⭐️5805 |
+| [hyperledger/fabric-sdk-go](https://github.com/hyperledger/fabric-sdk-go) |  (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️909 |
+| [lucasepe/g2d](https://github.com/lucasepe/g2d) | Craft beautiful geometric art using code. (*archived*) <sup>`ref:archived-tool`</sup> | Mozilla Public License 2.0 | ⭐️46 |
+| [awslabs/goformation](https://github.com/awslabs/goformation) | GoFormation is a Go library for working with CloudFormation templates. (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️847 |
+| [eBay/akutan](https://github.com/eBay/akutan) | A distributed knowledge graph store (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️1655 |
 | [taironas/tinygraphs](https://github.com/taironas/tinygraphs) | avatar generator web service (*archived*) | MIT License | ⭐️341 |
 | [rancher-archives/dapper](https://github.com/rancher-archives/dapper) | Docker build wrapper (*archived*) | Apache License 2.0 | ⭐️377 |
-| [bosun-monitor/bosun](https://github.com/bosun-monitor/bosun) | Time Series Alerting Framework (*archived*) | MIT License | ⭐️3394 |
+| [bosun-monitor/bosun](https://github.com/bosun-monitor/bosun) | Time Series Alerting Framework (*archived*) <sup>`ref:archived-tool`</sup> | MIT License | ⭐️3394 |
 | [mozilla/tls-observatory](https://github.com/mozilla/tls-observatory) | An observatory for TLS configurations, X509 certificates, and more. (*archived*) | Mozilla Public License 2.0 | ⭐️545 |
-| [mitchellh/gox](https://github.com/mitchellh/gox) | A dead simple, no frills Go cross compile tool (*archived*) | Mozilla Public License 2.0 | ⭐️4580 |
+| [mitchellh/gox](https://github.com/mitchellh/gox) | A dead simple, no frills Go cross compile tool (*archived*) <sup>`ref:archived-tool`</sup> | Mozilla Public License 2.0 | ⭐️4580 |
 | [aws/aws-sdk-go](https://github.com/aws/aws-sdk-go) | This SDK has reached end-of-support. The AWS SDK for Go v2 is available here: https://github.com/aws/aws-sdk-go-v2 (*archived*) | Apache License 2.0 | ⭐️8687 |
+
+
+**[⬆ back to top](#contents)**
+
+## HCL
+| Name  | Description | License | Stars |
+| ----- | -----| :---:|----:|
+| [nats-io/latency-tests](https://github.com/nats-io/latency-tests) | Latency and Throughput Test Framework (*archived*) | Apache License 2.0 | ⭐️19 |
 
 
 **[⬆ back to top](#contents)**
@@ -71,7 +93,7 @@ Total starred repositories: `70`
 ## Haskell
 | Name  | Description | License | Stars |
 | ----- | -----| :---:|----:|
-| [github/semantic](https://github.com/github/semantic) | Parsing, analyzing, and comparing source code across many languages (*archived*) | - | ⭐️9044 |
+| [github/semantic](https://github.com/github/semantic) | Parsing, analyzing, and comparing source code across many languages (*archived*) <sup>`ref:archived-tool`</sup> | - | ⭐️9044 |
 
 
 **[⬆ back to top](#contents)**
@@ -80,10 +102,11 @@ Total starred repositories: `70`
 | Name  | Description | License | Stars |
 | ----- | -----| :---:|----:|
 | [anjanatiha/Distributed-Big-Data-Application-for-Large-Scale-US-Stock-Market-Data-Analysis](https://github.com/anjanatiha/Distributed-Big-Data-Application-for-Large-Scale-US-Stock-Market-Data-Analysis) | Application for preprocessing, analysis and anomaly detection of US stock market data on multiple clusters using Apache Spark | Apache License 2.0 | ⭐️1 |
-| [zalando/nakadi](https://github.com/zalando/nakadi) | A distributed event bus that implements a RESTful API abstraction on top of Kafka-like queues (*archived*) | MIT License | ⭐️967 |
-| [camunda/camunda-bpm-platform](https://github.com/camunda/camunda-bpm-platform) | Camunda 7 CE is End of Life (EoL). Please check out Camunda 8 instead (https://github.com/camunda/camunda) or read about Camunda 7 Enterprise End of Life (https://camunda.com/blog/2025/02/camunda-7-enterprise-end-of-life-extension/) – Camunda 7 CE was a flexible framework for workflow and decision automation using BPMN and DMN. (*archived*) | Apache License 2.0 | ⭐️4269 |
-| [facebook/buck](https://github.com/facebook/buck) | A fast build system that encourages the creation of small, reusable modules over a variety of platforms and languages. (*archived*) | Apache License 2.0 | ⭐️8542 |
-| [spotify/heroic](https://github.com/spotify/heroic) | The Heroic Time Series Database (*archived*) | Apache License 2.0 | ⭐️846 |
+| [blazegraph/database](https://github.com/blazegraph/database) | Blazegraph High Performance Graph Database (*archived*) <sup>`ref:archived-tool`</sup> | GNU General Public License v2.0 | ⭐️986 |
+| [zalando/nakadi](https://github.com/zalando/nakadi) | A distributed event bus that implements a RESTful API abstraction on top of Kafka-like queues (*archived*) <sup>`ref:archived-tool`</sup> | MIT License | ⭐️967 |
+| [camunda/camunda-bpm-platform](https://github.com/camunda/camunda-bpm-platform) | Camunda 7 CE is End of Life (EoL). Please check out Camunda 8 instead (https://github.com/camunda/camunda) or read about Camunda 7 Enterprise End of Life (https://camunda.com/blog/2025/02/camunda-7-enterprise-end-of-life-extension/) – Camunda 7 CE was a flexible framework for workflow and decision automation using BPMN and DMN. (*archived*) | Apache License 2.0 | ⭐️4270 |
+| [facebook/buck](https://github.com/facebook/buck) | A fast build system that encourages the creation of small, reusable modules over a variety of platforms and languages. (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️8542 |
+| [spotify/heroic](https://github.com/spotify/heroic) | The Heroic Time Series Database (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️846 |
 
 
 **[⬆ back to top](#contents)**
@@ -92,6 +115,7 @@ Total starred repositories: `70`
 | Name  | Description | License | Stars |
 | ----- | -----| :---:|----:|
 | [software-2/NoHere](https://github.com/software-2/NoHere) |  | MIT License | ⭐️2 |
+| [cdaniel/doctrine](https://github.com/cdaniel/doctrine) | A very simple tool for visualising how competitive is the company in the light of Simon Wardley's Doctrine. (*archived*) | Apache License 2.0 | ⭐️62 |
 | [chirag127/Clear-Thought-MCP-server](https://github.com/chirag127/Clear-Thought-MCP-server) |  (*archived*) | - | ⭐️32 |
 | [nextcloud/weather](https://github.com/nextcloud/weather) | ⛅️ Weather app for Nextcloud (*archived*) | GNU Affero General Public License v3.0 | ⭐️51 |
 | [mandala-ui/mandala](https://github.com/mandala-ui/mandala) | React UI Components built with Functional CSS (*archived*) | MIT License | ⭐️17 |
@@ -128,7 +152,7 @@ Total starred repositories: `70`
 ## PowerShell
 | Name  | Description | License | Stars |
 | ----- | -----| :---:|----:|
-| [janikvonrotz/awesome-powershell](https://github.com/janikvonrotz/awesome-powershell) | This repository has been moved to https://codeberg.org/janikvonrotz/awesome-powershell. Please visit the new location for the latest updates. (*archived*) | GNU Affero General Public License v3.0 | ⭐️5395 |
+| [janikvonrotz/awesome-powershell](https://github.com/janikvonrotz/awesome-powershell) | This repository has been moved to https://codeberg.org/janikvonrotz/awesome-powershell. Please visit the new location for the latest updates. (*archived*) <sup>`ref:archived-ref`</sup> | GNU Affero General Public License v3.0 | ⭐️5395 |
 
 
 **[⬆ back to top](#contents)**
@@ -136,15 +160,18 @@ Total starred repositories: `70`
 ## Python
 | Name  | Description | License | Stars |
 | ----- | -----| :---:|----:|
+| [langchain-ai/executive-ai-assistant](https://github.com/langchain-ai/executive-ai-assistant) |  (*archived*) | MIT License | ⭐️2211 |
+| [amazon-science/RefChecker](https://github.com/amazon-science/RefChecker) | RefChecker provides automatic checking pipeline and benchmark dataset for detecting fine-grained hallucinations generated by Large Language Models. (*archived*) | Apache License 2.0 | ⭐️433 |
 | [dalalstreet-ai/news-sentiment-python](https://github.com/dalalstreet-ai/news-sentiment-python) | A SDK for Python applications for integrating the News Sentiment for financial apps for more than 7500+ sources worldwide. | MIT License | ⭐️3 |
 | [PavanParchuri/Stock-Market-Prediction-LSTM](https://github.com/PavanParchuri/Stock-Market-Prediction-LSTM) | ⚡ STOCK MARKET PREDICTION is a Deep Learning based web application using LSTM model and that is used to  predict the future stock prices based on 10 years historical data | MIT License | ⭐️3 |
 | [Choochera/Weekly-Winner](https://github.com/Choochera/Weekly-Winner) | Python command-line program that leverages the user's Robinhood account to assist in choosing options to perform the wheel strategy. This is done by utilizing a delta-based risk assessment and listing qualifying weekly options in order of potential profit within price range. | - | ⭐️8 |
 | [vein-project-team/vp-data](https://github.com/vein-project-team/vp-data) | Chinese hushen stock market analysis project | GNU General Public License v3.0 | ⭐️6 |
+| [AntonOsika/gpt-engineer](https://github.com/AntonOsika/gpt-engineer) | CLI platform to experiment with codegen. Precursor to: https://lovable.dev (*archived*) <sup>`ref:archived-tool`</sup> | MIT License | ⭐️55205 |
 | [Kirity/parallel-deletion-of-s3-bucket](https://github.com/Kirity/parallel-deletion-of-s3-bucket) | Programmatic way to cleanup version enabled S3 bucket  | MIT License | ⭐️3 |
 | [seigenbrode/mlops-sagemaker-jenkins-byo](https://github.com/seigenbrode/mlops-sagemaker-jenkins-byo) |  | - | ⭐️6 |
 | [jofrank21/Mandala](https://github.com/jofrank21/Mandala) | Mandala Generator | - | ⭐️3 |
-| [strands-agents/agent-builder](https://github.com/strands-agents/agent-builder) | An example agent demonstrating streaming, tool use, and interactivity from your terminal. This agent builder can help you to build your own agents and tools. (*archived*) | Apache License 2.0 | ⭐️420 |
-| [daveshap/ACE_Framework](https://github.com/daveshap/ACE_Framework) | ACE (Autonomous Cognitive Entities) - 100% local and open source autonomous agents (*archived*) | MIT License | ⭐️1502 |
+| [strands-agents/agent-builder](https://github.com/strands-agents/agent-builder) | An example agent demonstrating streaming, tool use, and interactivity from your terminal. This agent builder can help you to build your own agents and tools. (*archived*) | Apache License 2.0 | ⭐️419 |
+| [daveshap/ACE_Framework](https://github.com/daveshap/ACE_Framework) | ACE (Autonomous Cognitive Entities) - 100% local and open source autonomous agents (*archived*) <sup>`ref:archived-tool`</sup> | MIT License | ⭐️1501 |
 | [tursodatabase/libsql-client-py](https://github.com/tursodatabase/libsql-client-py) | Python SDK for libSQL (*archived*) | MIT License | ⭐️80 |
 | [awslabs/aws-orbit-workbench](https://github.com/awslabs/aws-orbit-workbench) | A Data Platform built for AWS, powered by Kubernetes. (*archived*) | Apache License 2.0 | ⭐️147 |
 | [OWASP/threat-model-cookbook](https://github.com/OWASP/threat-model-cookbook) | This project is about creating and publishing threat model examples. (*archived*) | Other | ⭐️428 |
@@ -155,12 +182,22 @@ Total starred repositories: `70`
 ## Rust
 | Name  | Description | License | Stars |
 | ----- | -----| :---:|----:|
-| [tensorflow/rust](https://github.com/tensorflow/rust) | Rust language bindings for TensorFlow (*archived*) | Apache License 2.0 | ⭐️5480 |
-| [solana-labs/solana-program-library](https://github.com/solana-labs/solana-program-library) | A collection of Solana programs maintained by Solana Labs (*archived*) | Apache License 2.0 | ⭐️4229 |
+| [systeminit/si](https://github.com/systeminit/si) | The System Initiative software (*archived*) | Apache License 2.0 | ⭐️1802 |
+| [jplatte/cargo-depgraph](https://github.com/jplatte/cargo-depgraph) | Creates graphviz dependency graphs for Rust projects that use Cargo (*archived*) | - | ⭐️224 |
+| [tensorflow/rust](https://github.com/tensorflow/rust) | Rust language bindings for TensorFlow (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️5480 |
+| [solana-labs/solana-program-library](https://github.com/solana-labs/solana-program-library) | A collection of Solana programs maintained by Solana Labs (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️4227 |
 | [kbknapp/cargo-count](https://github.com/kbknapp/cargo-count) | a cargo subcommand for counting lines of code in Rust projects (*archived*) | MIT License | ⭐️128 |
 | [hyperledger-archives/grid](https://github.com/hyperledger-archives/grid) | Grid has moved to end-of-life status. (*archived*) | Apache License 2.0 | ⭐️206 |
 | [hyperledger-archives/ursa](https://github.com/hyperledger-archives/ursa) | Hyperledger Ursa (a shared cryptographic library) has moved to end-of-life status, with the components of Ursa still in use moved to their relevant Hyperledger projects (AnonCreds, Indy, Aries and Iroha). (*archived*) | Apache License 2.0 | ⭐️325 |
-| [BurntSushi/xsv](https://github.com/BurntSushi/xsv) | A fast CSV command line toolkit written in Rust. (*archived*) | The Unlicense | ⭐️10751 |
+| [BurntSushi/xsv](https://github.com/BurntSushi/xsv) | A fast CSV command line toolkit written in Rust. (*archived*) <sup>`ref:archived-tool`</sup> | The Unlicense | ⭐️10750 |
+
+
+**[⬆ back to top](#contents)**
+
+## SCSS
+| Name  | Description | License | Stars |
+| ----- | -----| :---:|----:|
+| [slatedocs/slate](https://github.com/slatedocs/slate) | Beautiful static documentation for your API (*archived*) | - | ⭐️36081 |
 
 
 **[⬆ back to top](#contents)**
@@ -177,8 +214,10 @@ Total starred repositories: `70`
 ## TypeScript
 | Name  | Description | License | Stars |
 | ----- | -----| :---:|----:|
+| [RooCodeInc/Roo-Code](https://github.com/RooCodeInc/Roo-Code) | Roo Code gives you a whole dev team of AI agents in your code editor. (*archived*) | Apache License 2.0 | ⭐️24234 |
+| [awslabs/aws-ddk](https://github.com/awslabs/aws-ddk) | An open source development framework to help you build data workflows and modern data architecture on AWS. (*archived*) | Apache License 2.0 | ⭐️271 |
 | [sourcegraph/cody-public-snapshot](https://github.com/sourcegraph/cody-public-snapshot) | Type less, code more: Cody is an AI code assistant that uses advanced search and codebase context to help you write and fix code. (*archived*) | Apache License 2.0 | ⭐️3801 |
-| [awslabs/diagram-maker](https://github.com/awslabs/diagram-maker) | A library to display an interactive editor for any graph-like data. (*archived*) | Apache License 2.0 | ⭐️2417 |
+| [awslabs/diagram-maker](https://github.com/awslabs/diagram-maker) | A library to display an interactive editor for any graph-like data. (*archived*) <sup>`ref:archived-tool`</sup> | Apache License 2.0 | ⭐️2418 |
 | [aws-solutions/performance-dashboard-on-aws](https://github.com/aws-solutions/performance-dashboard-on-aws) | A simple cost-effective web application to build and publish dashboards. (*archived*) | Apache License 2.0 | ⭐️175 |
 | [microsoft/data-protection-mapping-project](https://github.com/microsoft/data-protection-mapping-project) | Open Source Data Protection/Privacy Regulatory Mapping Project (*archived*) | MIT License | ⭐️195 |
 
@@ -189,7 +228,7 @@ Total starred repositories: `70`
 | Name  | Description | License | Stars |
 | ----- | -----| :---:|----:|
 | [cdaniel/faciliator-pack](https://github.com/cdaniel/faciliator-pack) |  | - | ⭐️7 |
-| [libsql/sqld](https://github.com/libsql/sqld) | LibSQL with extended capabilities like HTTP protocol, replication, and more. (*archived*) | - | ⭐️892 |
+| [libsql/sqld](https://github.com/libsql/sqld) | LibSQL with extended capabilities like HTTP protocol, replication, and more. (*archived*) <sup>`ref:archived-tool`</sup> | - | ⭐️891 |
 | [ukncsc/secure-development-and-deployment](https://github.com/ukncsc/secure-development-and-deployment) | NCSC Guidance for secure development and deployment (*archived*) | - | ⭐️442 |
 
 
@@ -197,15 +236,15 @@ Total starred repositories: `70`
 
 ## Repository Statistics
 
-**Total Repositories**: 70
+**Total Repositories**: 85
 
 **By Platform**:
-- GitHub: 70 repositories (100.0%)
+- GitHub: 85 repositories (100.0%)
 
 **By Status**:
-- Active: 17 repositories (24.3%)
-- Archived: 53 repositories (75.7%)
+- Active: 17 repositories (20.0%)
+- Archived: 68 repositories (80.0%)
 
-**Last Updated**: 2026-06-16T03:52:59.854735+00:00
+**Last Updated**: 2026-06-17T16:49:49.232895+00:00
 
 *Generated by [encodedfox/stargazer](https://github.com/encodedfox/stargazer) + omnidatum-processor*

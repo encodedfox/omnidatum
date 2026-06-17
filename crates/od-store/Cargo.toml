@@ -14,5 +14,9 @@ tracing = { workspace = true }
 chrono = { workspace = true }
 rusqlite = { workspace = true }
 
+[lints]
+workspace = true
+
 [dev-dependencies]
 tempfile = { workspace = true }
+mockito = { workspace = true }

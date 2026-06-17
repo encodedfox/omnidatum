@@ -129,7 +129,7 @@ impl CredentialManager {
     fn credentials_file_path() -> PathBuf {
         dirs::config_dir()
             .unwrap_or_else(|| PathBuf::from("."))
-            .join("omnidatum")
+            .join("repoquery")
             .join("credentials")
     }
 
@@ -139,6 +139,21 @@ impl CredentialManager {
             format!("{}...***REDACTED***", &token[..4])
         } else {
             "***REDACTED***".to_string()
+        }
+    }
+
+    /// Validate token format (checks for expected GitHub token prefixes)
+    pub fn validate_token_format(token: &str) -> Result<(), String> {
+        if token.is_empty() {
+            return Err("Token is empty".to_string());
+        }
+        if token.starts_with("ghp_") || token.starts_with("github_pat_") || token.starts_with("gho_") || token.starts_with("ghu_") {
+            Ok(())
+        } else {
+            Err(format!(
+                "Token doesn't match expected GitHub token format. Expected prefix: ghp_, github_pat_, gho_, or ghu_. Got token starting with '{}'",
+                if token.len() > 4 { &token[..4] } else { token }
+            ))
         }
     }
 }

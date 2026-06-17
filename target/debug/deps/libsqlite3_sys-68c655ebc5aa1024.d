@@ -1,0 +1,9 @@
+/Users/joemelfi/projects/repoquery/target/debug/deps/libsqlite3_sys-68c655ebc5aa1024.d: /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsqlite3-sys-0.28.0/src/lib.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsqlite3-sys-0.28.0/src/error.rs /Users/joemelfi/projects/repoquery/target/debug/build/libsqlite3-sys-d59d7a0b8e2783b1/out/bindgen.rs
+
+/Users/joemelfi/projects/repoquery/target/debug/deps/liblibsqlite3_sys-68c655ebc5aa1024.rmeta: /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsqlite3-sys-0.28.0/src/lib.rs /Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsqlite3-sys-0.28.0/src/error.rs /Users/joemelfi/projects/repoquery/target/debug/build/libsqlite3-sys-d59d7a0b8e2783b1/out/bindgen.rs
+
+/Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsqlite3-sys-0.28.0/src/lib.rs:
+/Users/joemelfi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsqlite3-sys-0.28.0/src/error.rs:
+/Users/joemelfi/projects/repoquery/target/debug/build/libsqlite3-sys-d59d7a0b8e2783b1/out/bindgen.rs:
+
+# env-dep:OUT_DIR=/Users/joemelfi/projects/repoquery/target/debug/build/libsqlite3-sys-d59d7a0b8e2783b1/out

@@ -1,0 +1,547 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
+     Running `target/debug/repoquery query search 'moved to' --format json`
+[
+  {
+    "id": "github-com-ziglang-zig",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/ziglang/zig",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "zig",
+      "owner": "ziglang",
+      "full_name": "ziglang/zig",
+      "description": "Moved to Codeberg",
+      "primary_language": "Zig",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 43120,
+      "topics": [
+        "compiler",
+        "zig",
+        "language"
+      ],
+      "homepage": "https://ziglang.org/news/migrating-from-github-to-codeberg/"
+    },
+    "classification": {
+      "language_category": "Zig",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": false,
+      "last_commit_date": "2025-11-27",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-technomancy-leiningen",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/technomancy/leiningen",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15",
+        "notes": "Migration detected from description"
+      }
+    ],
+    "metadata": {
+      "name": "leiningen",
+      "owner": "technomancy",
+      "full_name": "technomancy/leiningen",
+      "description": "Moved to Codeberg; this is a temporary convenience mirror",
+      "primary_language": "Clojure",
+      "license": "Other",
+      "license_spdx": "NOASSERTION",
+      "stars": 7304,
+      "homepage": "https://codeberg.org/leiningen/leiningen"
+    },
+    "classification": {
+      "language_category": "Clojure",
+      "readme_inclusion": true,
+      "readme_inclusion_reason": "star_threshold"
+    },
+    "quality_metrics": {
+      "archive_status": false,
+      "last_commit_date": "2026-06-08",
+      "last_star_update": "2026-06-17",
+      "quality_score": 78
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "curator_notes": "Platform migration detected from description",
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-janikvonrotz-awesome-powershell",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/janikvonrotz/awesome-powershell",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "awesome-powershell",
+      "owner": "janikvonrotz",
+      "full_name": "janikvonrotz/awesome-powershell",
+      "description": "This repository has been moved to https://codeberg.org/janikvonrotz/awesome-powershell. Please visit the new location for the latest updates.",
+      "primary_language": "PowerShell",
+      "license": "GNU Affero General Public License v3.0",
+      "license_spdx": "AGPL-3.0",
+      "stars": 5395,
+      "topics": [
+        "powershell",
+        "windows-powershell",
+        "powershell-ise",
+        "powershell-cmdlets",
+        "awesome",
+        "guides",
+        "tutorial",
+        "linux-powershell",
+        "awesome-list",
+        "list"
+      ]
+    },
+    "classification": {
+      "language_category": "PowerShell",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-04-14",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-hyperledger-archives-ursa",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/hyperledger-archives/ursa",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "ursa",
+      "owner": "hyperledger-archives",
+      "full_name": "hyperledger-archives/ursa",
+      "description": "Hyperledger Ursa (a shared cryptographic library) has moved to end-of-life status, with the components of Ursa still in use moved to their relevant Hyperledger projects (AnonCreds, Indy, Aries and Iroha).",
+      "primary_language": "Rust",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 325,
+      "homepage": "https://wiki.hyperledger.org/display/ursa"
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-01-24",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-hyperledger-archives-grid",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/hyperledger-archives/grid",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "grid",
+      "owner": "hyperledger-archives",
+      "full_name": "hyperledger-archives/grid",
+      "description": "Grid has moved to end-of-life status.",
+      "primary_language": "Rust",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 206,
+      "topics": [
+        "hyperledger",
+        "hyperledger-grid"
+      ],
+      "homepage": "https://grid.hyperledger.org/"
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-03-23",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  }
+]
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
+     Running `target/debug/repoquery query search deprecated --format json`
+[
+  {
+    "id": "github-com-rebuy-de-aws-nuke",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/rebuy-de/aws-nuke",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "aws-nuke",
+      "owner": "rebuy-de",
+      "full_name": "rebuy-de/aws-nuke",
+      "description": "Nuke a whole AWS account and delete all its resources.",
+      "primary_language": "Go",
+      "license": "MIT License",
+      "license_spdx": "MIT",
+      "stars": 5805,
+      "topics": [
+        "aws",
+        "golang",
+        "cli",
+        "deprecated"
+      ],
+      "homepage": "https://github.com/ekristen/aws-nuke"
+    },
+    "classification": {
+      "language_category": "Go",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-10-15",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-mozilla-Fira",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/mozilla/Fira",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "Fira",
+      "owner": "mozilla",
+      "full_name": "mozilla/Fira",
+      "description": "DEPRECATED - Mozilla's new typeface, used in Firefox OS",
+      "primary_language": "CSS",
+      "license": "Other",
+      "license_spdx": "NOASSERTION",
+      "stars": 5157,
+      "topics": [
+        "abandoned",
+        "unmaintained"
+      ],
+      "homepage": "mozilla.github.io/Fira"
+    },
+    "classification": {
+      "language_category": "CSS",
+      "readme_inclusion": true,
+      "readme_inclusion_reason": "star_threshold"
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2020-12-16",
+      "last_star_update": "2026-06-17",
+      "quality_score": 78
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-osohq-oso",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/osohq/oso",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "oso",
+      "owner": "osohq",
+      "full_name": "osohq/oso",
+      "description": "Deprecated: See README",
+      "primary_language": "Rust",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 3494
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": true,
+      "readme_inclusion_reason": "star_threshold"
+    },
+    "quality_metrics": {
+      "archive_status": false,
+      "last_commit_date": "2025-02-26",
+      "last_star_update": "2026-06-17",
+      "quality_score": 68
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  }
+]
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
+     Running `target/debug/repoquery query search end-of-life --format json`
+[
+  {
+    "id": "github-com-camunda-camunda-bpm-platform",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/camunda/camunda-bpm-platform",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "camunda-bpm-platform",
+      "owner": "camunda",
+      "full_name": "camunda/camunda-bpm-platform",
+      "description": "Camunda 7 CE is End of Life (EoL). Please check out Camunda 8 instead (https://github.com/camunda/camunda) or read about Camunda 7 Enterprise End of Life (https://camunda.com/blog/2025/02/camunda-7-enterprise-end-of-life-extension/) – Camunda 7 CE was a flexible framework for workflow and decision automation using BPMN and DMN.",
+      "primary_language": "Java",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 4270,
+      "topics": [
+        "camunda-bpm-platform",
+        "bpm",
+        "process-engine",
+        "java",
+        "camunda-engine",
+        "dmn",
+        "cmmn",
+        "workflow",
+        "bpmn",
+        "end-of-life",
+        "eol"
+      ],
+      "homepage": "https://camunda.com/"
+    },
+    "classification": {
+      "language_category": "Java",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2025-11-04",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-hyperledger-archives-ursa",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/hyperledger-archives/ursa",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "ursa",
+      "owner": "hyperledger-archives",
+      "full_name": "hyperledger-archives/ursa",
+      "description": "Hyperledger Ursa (a shared cryptographic library) has moved to end-of-life status, with the components of Ursa still in use moved to their relevant Hyperledger projects (AnonCreds, Indy, Aries and Iroha).",
+      "primary_language": "Rust",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 325,
+      "homepage": "https://wiki.hyperledger.org/display/ursa"
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2024-01-24",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  },
+  {
+    "id": "github-com-hyperledger-archives-grid",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/hyperledger-archives/grid",
+        "status": "archived",
+        "is_primary": true,
+        "last_verified": "2026-06-16"
+      }
+    ],
+    "metadata": {
+      "name": "grid",
+      "owner": "hyperledger-archives",
+      "full_name": "hyperledger-archives/grid",
+      "description": "Grid has moved to end-of-life status.",
+      "primary_language": "Rust",
+      "license": "Apache License 2.0",
+      "license_spdx": "Apache-2.0",
+      "stars": 206,
+      "topics": [
+        "hyperledger",
+        "hyperledger-grid"
+      ],
+      "homepage": "https://grid.hyperledger.org/"
+    },
+    "classification": {
+      "language_category": "Rust",
+      "readme_inclusion": false
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "archive_date": "2026-06-16",
+      "last_commit_date": "2023-03-23",
+      "last_star_update": "2026-06-17",
+      "quality_score": 70
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-16",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  }
+]
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
+     Running `target/debug/repoquery query search unmaintained --format json`
+[
+  {
+    "id": "github-com-mozilla-Fira",
+    "platforms": [
+      {
+        "platform": "github",
+        "url": "https://github.com/mozilla/Fira",
+        "status": "active",
+        "is_primary": true,
+        "last_verified": "2026-06-15"
+      }
+    ],
+    "metadata": {
+      "name": "Fira",
+      "owner": "mozilla",
+      "full_name": "mozilla/Fira",
+      "description": "DEPRECATED - Mozilla's new typeface, used in Firefox OS",
+      "primary_language": "CSS",
+      "license": "Other",
+      "license_spdx": "NOASSERTION",
+      "stars": 5157,
+      "topics": [
+        "abandoned",
+        "unmaintained"
+      ],
+      "homepage": "mozilla.github.io/Fira"
+    },
+    "classification": {
+      "language_category": "CSS",
+      "readme_inclusion": true,
+      "readme_inclusion_reason": "star_threshold"
+    },
+    "quality_metrics": {
+      "archive_status": true,
+      "last_commit_date": "2020-12-16",
+      "last_star_update": "2026-06-17",
+      "quality_score": 78
+    },
+    "source": "git_hub_stars",
+    "added_date": "2026-06-15",
+    "manually_curated": false,
+    "relations": [
+      "starred"
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-use crate::traits::{RepoFilter, RepoStore};
+use crate::traits::{RepoFilter, RepoStore, SortField, SortOrder};
 use anyhow::{Context, Result};
 use od_core::{Book, CanonicalData, Collection, ManualProject, Repository, WebReference};
 use rusqlite::{params, Connection};
@@ -16,8 +16,21 @@ impl SqliteStore {
             Connection::open(path)?
         };
         let store = Self { conn };
+        store.verify_integrity()?;
         store.init_schema()?;
         Ok(store)
+    }
+
+    fn verify_integrity(&self) -> Result<()> {
+        let result: String = self.conn
+            .query_row("PRAGMA integrity_check", [], |row| row.get(0))
+            .context("Failed to run integrity check")?;
+        if result != "ok" {
+            tracing::warn!("Database integrity check failed: {}", result);
+        } else {
+            tracing::debug!("Database integrity check passed");
+        }
+        Ok(())
     }
 
     fn init_schema(&self) -> Result<()> {
@@ -252,28 +265,31 @@ impl RepoStore for SqliteStore {
     }
 
     fn list_repos(&self, filter: &RepoFilter) -> Result<Vec<Repository>> {
-        // Build WHERE clause and collect params as boxed values.
-        let mut conditions: Vec<&str> = Vec::new();
+        let mut conditions: Vec<String> = Vec::new();
         let mut param_values: Vec<Box<dyn rusqlite::ToSql>> = Vec::new();
 
         if let Some(lang) = &filter.language {
-            conditions.push("primary_language = ?");
+            conditions.push("primary_language = ?".to_string());
             param_values.push(Box::new(lang.clone()));
         }
         if let Some(archived) = filter.archived {
-            conditions.push("archive_status = ?");
+            conditions.push("archive_status = ?".to_string());
             param_values.push(Box::new(if archived { 1i64 } else { 0i64 }));
         }
         if let Some(min) = filter.min_stars {
-            conditions.push("stars >= ?");
+            conditions.push("stars >= ?".to_string());
             param_values.push(Box::new(min as i64));
         }
+        if let Some(max) = filter.max_stars {
+            conditions.push("stars <= ?".to_string());
+            param_values.push(Box::new(max as i64));
+        }
         if let Some(src) = &filter.source {
-            conditions.push("source = ?");
+            conditions.push("source = ?".to_string());
             param_values.push(Box::new(src.clone()));
         }
         if let Some(tag) = &filter.tag {
-            conditions.push("custom_tags_json LIKE ?");
+            conditions.push("custom_tags_json LIKE ?".to_string());
             param_values.push(Box::new(format!("%\"{}\"%" , tag)));
         }
 
@@ -311,11 +327,73 @@ impl RepoStore for SqliteStore {
             ))
         })?;
 
-        rows.map(|r| {
-            let (id, meta_j, class_j, qual_j, plat_j, src_j, added, curated, notes, rel_j, tags_j, ahead, behind) = r?;
-            repo_from_row(&id, &meta_j, &class_j, &qual_j, &plat_j, &src_j, added, curated, notes, &rel_j, tags_j.as_deref(), ahead, behind)
-        })
-        .collect()
+        let mut repos: Vec<Repository> = rows
+            .map(|r| {
+                let (id, meta_j, class_j, qual_j, plat_j, src_j, added, curated, notes, rel_j, tags_j, ahead, behind) = r?;
+                repo_from_row(&id, &meta_j, &class_j, &qual_j, &plat_j, &src_j, added, curated, notes, &rel_j, tags_j.as_deref(), ahead, behind)
+            })
+            .collect::<Result<Vec<_>>>()?;
+
+        // Post-filter on fields stored in JSON columns
+        if let Some(ref owner) = filter.owner {
+            repos.retain(|r| r.metadata.owner.to_lowercase() == owner.to_lowercase());
+        }
+        if let Some(ref license) = filter.license {
+            repos.retain(|r| r.metadata.license_spdx.as_deref().map(|l| l.to_lowercase()) == Some(license.to_lowercase()));
+        }
+        if let Some(ref topic) = filter.topic {
+            repos.retain(|r| r.metadata.topics.iter().any(|t| t.to_lowercase() == topic.to_lowercase()));
+        }
+        if let Some(ref query) = filter.search_query {
+            let q = query.to_lowercase();
+            repos.retain(|r| {
+                r.metadata.name.to_lowercase().contains(&q)
+                    || r.metadata.description.to_lowercase().contains(&q)
+                    || r.metadata.topics.iter().any(|t| t.to_lowercase().contains(&q))
+            });
+        }
+
+        // Sort
+        match filter.sort {
+            SortField::Stars => {
+                if filter.order == SortOrder::Asc {
+                    repos.sort_by_key(|r| r.metadata.stars);
+                } else {
+                    repos.sort_by(|a, b| b.metadata.stars.cmp(&a.metadata.stars));
+                }
+            }
+            SortField::Name => {
+                if filter.order == SortOrder::Asc {
+                    repos.sort_by(|a, b| a.metadata.name.cmp(&b.metadata.name));
+                } else {
+                    repos.sort_by(|a, b| b.metadata.name.cmp(&a.metadata.name));
+                }
+            }
+            SortField::Updated => {
+                if filter.order == SortOrder::Asc {
+                    repos.sort_by(|a, b| a.quality_metrics.last_star_update.cmp(&b.quality_metrics.last_star_update));
+                } else {
+                    repos.sort_by(|a, b| b.quality_metrics.last_star_update.cmp(&a.quality_metrics.last_star_update));
+                }
+            }
+            SortField::Created => {
+                repos.sort_by(|a, b| a.id.cmp(&b.id)); // fallback: sort by id
+            }
+            SortField::Quality => {
+                if filter.order == SortOrder::Asc {
+                    repos.sort_by_key(|r| r.quality_metrics.quality_score);
+                } else {
+                    repos.sort_by(|a, b| b.quality_metrics.quality_score.cmp(&a.quality_metrics.quality_score));
+                }
+            }
+        }
+
+        // Limit
+        if let Some(limit) = filter.limit {
+            repos.truncate(limit);
+        }
+
+        Ok(repos)
     }
 
     fn count_repos(&self, filter: &RepoFilter) -> Result<usize> {

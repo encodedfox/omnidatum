@@ -9,11 +9,12 @@ pub mod readme_updater;
 
 pub use config::{
     credentials::CredentialManager,
-    settings::{CredentialSource, GenerationConfig, OmnidatumConfig, StatsDetailLevel, SyncConfig, ValidationConfig},
+    settings::{CredentialSource, GenerationConfig, OmnidatumConfig, StatsDetailLevel, StorageConfig, StorageMode, SyncConfig, ValidationConfig},
 };
 pub use error::CoreError;
 pub use merge::{DataMerger, MergeStrategy};
 pub use models::{
+    classify_activity, classify_all, summarize, trend_score, ActivityResult, ActivityStatus, ActivitySummary,
     Book, CanonicalData, Collection, ContentType, DifficultyLevel, ManualProject,
     ManualProjectClassification, ManualProjectMetadata, Platform, PlatformInfo, PlatformStatus,
     QualityMetrics, Relation, ReferenceStatus, Repository, RepositoryClassification,

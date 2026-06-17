@@ -7,6 +7,6 @@ pub mod settings;
 
 pub use credentials::CredentialManager;
 pub use settings::{
-    CredentialSource, GenerationConfig, OmnidatumConfig, StatsDetailLevel, SyncConfig,
-    ValidationConfig,
+    CredentialSource, GenerationConfig, OmnidatumConfig, StatsDetailLevel, StorageConfig,
+    StorageMode, SyncConfig, ValidationConfig,
 };

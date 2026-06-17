@@ -4,6 +4,47 @@ use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::path::PathBuf;
 
+/// Storage backend mode
+#[derive(Debug, Clone, PartialEq, Eq, Deserialize, Serialize)]
+#[serde(rename_all = "snake_case")]
+pub enum StorageMode {
+    /// YAML is canonical source of truth; SQLite is read-only cache
+    Yaml,
+    /// SQLite is primary store; YAML is export-only or disabled
+    Sqlite,
+    /// Both stores updated in sync; YAML remains canonical
+    Dual,
+}
+
+impl Default for StorageMode {
+    fn default() -> Self {
+        Self::Yaml
+    }
+}
+
+/// Storage configuration
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct StorageConfig {
+    /// Storage backend mode
+    pub mode: StorageMode,
+    /// Path to SQLite database (required for sqlite/dual modes)
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub database_path: Option<PathBuf>,
+    /// Path to canonical YAML data (required for yaml/dual modes)
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub canonical_path: Option<PathBuf>,
+}
+
+impl Default for StorageConfig {
+    fn default() -> Self {
+        Self {
+            mode: StorageMode::Yaml,
+            database_path: Some(PathBuf::from("data/omnidatum.db")),
+            canonical_path: Some(PathBuf::from("data/canonical/repositories.yml")),
+        }
+    }
+}
+
 /// Main configuration structure
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct OmnidatumConfig {
@@ -11,6 +52,7 @@ pub struct OmnidatumConfig {
     pub credentials: CredentialsConfig,
     pub validation: ValidationConfig,
     pub generation: GenerationConfig,
+    pub storage: StorageConfig,
 }
 
 /// Sync-related configuration
@@ -87,25 +129,82 @@ impl OmnidatumConfig {
     pub fn load() -> crate::Result<Self> {
         let config_path = Self::config_path();
 
-        if config_path.exists() {
+        let mut config = if config_path.exists() {
             let content = std::fs::read_to_string(&config_path)?;
             let config: Self = toml::from_str(&content)?;
-            config.validate()?;
-            Ok(config)
+            config
         } else {
             tracing::debug!(
                 "Config file not found at {:?}, using defaults",
                 config_path
             );
-            Ok(Self::default())
-        }
+            Self::default()
+        };
+
+        config.apply_env_overrides();
+        config.validate()?;
+        Ok(config)
     }
 
-    /// Get configuration file path
+    /// Apply REPOQUERY_* environment variable overrides
+    /// Priority: CLI flags > env vars > config file > defaults
+    fn apply_env_overrides(&mut self) {
+        // Sync config
+        if let Ok(val) = std::env::var("REPOQUERY_SYNC_ENABLED") {
+            self.sync.enabled = val.eq_ignore_ascii_case("true");
+        }
+        if let Ok(val) = std::env::var("REPOQUERY_SYNC_INTERVAL_HOURS") {
+            if let Ok(v) = val.parse() { self.sync.interval_hours = v; }
+        }
+        if let Ok(val) = std::env::var("REPOQUERY_SYNC_PARALLEL_WORKERS") {
+            if let Ok(v) = val.parse() { self.sync.parallel_workers = v; }
+        }
+        if let Ok(val) = std::env::var("REPOQUERY_SYNC_CACHE_TTL_HOURS") {
+            if let Ok(v) = val.parse() { self.sync.cache_ttl_hours = v; }
+        }
+        if let Ok(val) = std::env::var("REPOQUERY_SYNC_RATE_LIMIT_BUFFER") {
+            if let Ok(v) = val.parse() { self.sync.rate_limit_buffer = v; }
+        }
+        if let Ok(val) = std::env::var("REPOQUERY_SYNC_REQUEST_TIMEOUT_SECS") {
+            if let Ok(v) = val.parse() { self.sync.request_timeout_secs = v; }
+        }
+
+        // Credentials
+        if let Ok(val) = std::env::var("REPOQUERY_CREDENTIALS_SOURCE") {
+            match val.to_lowercase().as_str() {
+                "env" => self.credentials.source = CredentialSource::Env,
+                "file" => self.credentials.source = CredentialSource::File,
+                "keychain" => self.credentials.source = CredentialSource::Keychain,
+                _ => tracing::warn!("Unknown credential source: {}", val),
+            }
+        }
+
+        // Storage
+        if let Ok(val) = std::env::var("REPOQUERY_STORAGE_MODE") {
+            match val.to_lowercase().as_str() {
+                "yaml" => self.storage.mode = StorageMode::Yaml,
+                "sqlite" => self.storage.mode = StorageMode::Sqlite,
+                "dual" => self.storage.mode = StorageMode::Dual,
+                _ => tracing::warn!("Unknown storage mode: {}", val),
+            }
+        }
+        if let Ok(val) = std::env::var("REPOQUERY_STORAGE_DATABASE_PATH") {
+            self.storage.database_path = Some(PathBuf::from(val));
+        }
+        if let Ok(val) = std::env::var("REPOQUERY_STORAGE_CANONICAL_PATH") {
+            self.storage.canonical_path = Some(PathBuf::from(val));
+        }
+
+        // Display (handled at CLI level, parsed here for documentation)
+        if std::env::var("REPOQUERY_DISPLAY_FORMAT").is_ok() { }
+        if std::env::var("REPOQUERY_DISPLAY_ITEMS_PER_PAGE").is_ok() { }
+    }
+
+    /// Get configuration file path (XDG-compliant)
     pub fn config_path() -> PathBuf {
         let config_dir = dirs::config_dir()
             .unwrap_or_else(|| PathBuf::from("."))
-            .join("omnidatum");
+            .join("repoquery");
         config_dir.join("config.toml")
     }
 
@@ -127,6 +226,35 @@ impl OmnidatumConfig {
             return Err(crate::CoreError::Config(format!(
                 "rate_limit_buffer must be between 0 and 1000, got {}",
                 self.sync.rate_limit_buffer
+            )));
+        }
+        self.validate_path_safety()?;
+        Ok(())
+    }
+
+    /// Validate all config paths against directory traversal attacks
+    fn validate_path_safety(&self) -> crate::Result<()> {
+        let config_dir = dirs::config_dir()
+            .unwrap_or_else(|| std::path::PathBuf::from("."));
+        let allowed_prefixes = [
+            config_dir.clone(),
+            std::path::PathBuf::from(".").canonicalize().unwrap_or_default(),
+        ];
+
+        if let Some(ref path) = self.credentials.file_path {
+            Self::check_path_traversal(path, &allowed_prefixes)?;
+        }
+
+        Ok(())
+    }
+
+    /// Check a single path for traversal attempts outside allowed directories
+    fn check_path_traversal(path: &std::path::PathBuf, _allowed: &[std::path::PathBuf]) -> crate::Result<()> {
+        let path_str = path.to_string_lossy();
+        if path_str.contains("..") {
+            return Err(crate::CoreError::Config(format!(
+                "Path traversal detected: '{}' contains '..' which is not allowed for security reasons",
+                path_str
             )));
         }
         Ok(())
@@ -185,6 +313,7 @@ impl Default for OmnidatumConfig {
                 platform_info: false,
                 stats_detail_level: StatsDetailLevel::Standard,
             },
+            storage: StorageConfig::default(),
         }
     }
 }

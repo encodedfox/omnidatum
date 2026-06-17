@@ -1,5 +1,6 @@
 //! Data models for canonical repository representation
 
+pub mod activity;
 mod book;
 mod canonical;
 mod collection;
@@ -10,6 +11,7 @@ mod relation;
 mod repository;
 mod sync_metadata;
 
+pub use activity::*;
 pub use book::*;
 pub use canonical::*;
 pub use collection::*;
