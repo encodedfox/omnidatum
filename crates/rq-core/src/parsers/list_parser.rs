@@ -297,7 +297,7 @@ impl ListParser {
 
 impl Default for ListParser {
     fn default() -> Self {
-        Self::new().expect("Failed to create ListParser")
+        Self::new().unwrap_or_default()
     }
 }
 

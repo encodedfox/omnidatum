@@ -2,24 +2,19 @@
 
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 
 /// Storage backend mode
-#[derive(Debug, Clone, PartialEq, Eq, Deserialize, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Deserialize, Serialize, Default)]
 #[serde(rename_all = "snake_case")]
 pub enum StorageMode {
     /// YAML is canonical source of truth; SQLite is read-only cache
+    #[default]
     Yaml,
     /// SQLite is primary store; YAML is export-only or disabled
     Sqlite,
     /// Both stores updated in sync; YAML remains canonical
     Dual,
-}
-
-impl Default for StorageMode {
-    fn default() -> Self {
-        Self::Yaml
-    }
 }
 
 /// Storage configuration
@@ -203,8 +198,8 @@ impl RepoqueryConfig {
         }
 
         // Display (handled at CLI level, parsed here for documentation)
-        if std::env::var("REPOQUERY_DISPLAY_FORMAT").is_ok() {}
-        if std::env::var("REPOQUERY_DISPLAY_ITEMS_PER_PAGE").is_ok() {}
+        let _ = std::env::var("REPOQUERY_DISPLAY_FORMAT");
+        let _ = std::env::var("REPOQUERY_DISPLAY_ITEMS_PER_PAGE");
     }
 
     /// Get configuration file path (XDG-compliant)
@@ -258,8 +253,8 @@ impl RepoqueryConfig {
 
     /// Check a single path for traversal attempts outside allowed directories
     fn check_path_traversal(
-        path: &std::path::PathBuf,
-        _allowed: &[std::path::PathBuf],
+        path: &Path,
+        _allowed: &[PathBuf],
     ) -> crate::Result<()> {
         let path_str = path.to_string_lossy();
         if path_str.contains("..") {

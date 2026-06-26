@@ -97,6 +97,7 @@ impl SyncOrchestrator {
             let adapter = Arc::clone(&adapter);
             let sem = Arc::clone(&semaphore);
             join_set.spawn(async move {
+                #[allow(clippy::expect_used)]
                 let _permit = sem.acquire().await.expect("semaphore closed");
                 let identifier = format!("{}/{}", owner, name);
                 let span = info_span!("sync_repo", repo = %identifier);

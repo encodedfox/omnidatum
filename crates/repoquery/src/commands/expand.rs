@@ -6,7 +6,7 @@ use rq_expander::{
     TrustScorer,
 };
 use rq_store::{GraphStore, SqliteStore};
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use tokio::sync::Mutex;
 
@@ -135,13 +135,13 @@ pub struct CollectArgs {
     pub discovered_via: String,
 }
 
-fn open_store(path: &PathBuf) -> Result<Arc<Mutex<dyn GraphStore + Send>>> {
+fn open_store(path: &Path) -> Result<Arc<Mutex<dyn GraphStore + Send>>> {
     let store = SqliteStore::new(path)
         .with_context(|| format!("Failed to open store at {}", path.display()))?;
     Ok(Arc::new(Mutex::new(store)))
 }
 
-fn open_repo_store(path: &PathBuf) -> Result<Arc<Mutex<dyn rq_store::RepoStore + Send>>> {
+fn open_repo_store(path: &Path) -> Result<Arc<Mutex<dyn rq_store::RepoStore + Send>>> {
     let store = SqliteStore::new(path)
         .with_context(|| format!("Failed to open repo store at {}", path.display()))?;
     Ok(Arc::new(Mutex::new(store)))
@@ -193,8 +193,8 @@ pub async fn run_seed(action: SeedAction) -> Result<()> {
                 return Ok(());
             }
             println!(
-                "{:<24} {:<10} {:<20} {:<10} {}",
-                "ID", "Platform", "Username", "Depth", "Status"
+                "{:<24} {:<10} {:<20} {:<10} Status",
+                "ID", "Platform", "Username", "Depth"
             );
             println!("{}", "-".repeat(80));
             for s in &seeds {
@@ -367,7 +367,6 @@ pub async fn run_trust(args: TrustArgs) -> Result<()> {
     let config = TrustConfig {
         decay_factor: args.decay,
         min_score: args.min_score,
-        ..TrustConfig::default()
     };
 
     let guard = store.lock().await;

@@ -28,14 +28,14 @@ pub async fn run(args: TopicsArgs) -> Result<()> {
     }
 
     let mut counts: Vec<_> = topic_counts.into_iter().collect();
-    counts.sort_by(|a, b| b.1.cmp(&a.1));
+    counts.sort_by_key(|b| std::cmp::Reverse(b.1));
     counts.retain(|(_, c)| *c >= args.min_repos);
 
     if let Some(limit) = args.limit {
         counts.truncate(limit);
     }
 
-    println!("{:<30} {}", "Topic", "Repos");
+    println!("{:<30} Repos", "Topic");
     println!("{}", "-".repeat(40));
     for (topic, count) in &counts {
         println!("{:<30} {}", topic, count);

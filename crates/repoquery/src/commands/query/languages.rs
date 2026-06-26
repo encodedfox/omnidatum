@@ -31,7 +31,7 @@ pub async fn run(args: LanguagesArgs) -> Result<()> {
     }
 
     let mut counts: Vec<_> = lang_counts.into_iter().collect();
-    counts.sort_by(|a, b| b.1.cmp(&a.1));
+    counts.sort_by_key(|b| std::cmp::Reverse(b.1));
     counts.retain(|(_, c)| *c >= args.min_repos);
 
     if let Some(limit) = args.limit {

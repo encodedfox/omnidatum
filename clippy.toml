@@ -8,8 +8,8 @@ too-many-arguments-threshold = 15
 
 # Disallow panic-related macros in production code
 disallowed-methods = [
-    "std::panic",
-    "std::todo",
-    "std::unreachable",
-    "std::unimplemented",
+    { path = "std::panic", allow-invalid = true },
+    { path = "std::todo", allow-invalid = true },
+    { path = "std::unreachable", allow-invalid = true },
+    { path = "std::unimplemented", allow-invalid = true },
 ]

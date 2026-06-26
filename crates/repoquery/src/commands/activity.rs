@@ -160,7 +160,7 @@ pub async fn run_overview(args: OverviewArgs) -> Result<()> {
             // Embellish repository with activity status so the formatter can see it
             rq_core::Repository {
                 classification: rq_core::RepositoryClassification {
-                    language_category: format!("{}", r.status.label()),
+                    language_category: r.status.label().to_string(),
                     ..repo.classification
                 },
                 ..repo

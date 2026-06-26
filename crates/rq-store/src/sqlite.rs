@@ -540,7 +540,7 @@ impl RepoStore for SqliteStore {
                 if filter.order == SortOrder::Asc {
                     repos.sort_by_key(|r| r.metadata.stars);
                 } else {
-                    repos.sort_by(|a, b| b.metadata.stars.cmp(&a.metadata.stars));
+                    repos.sort_by_key(|b| std::cmp::Reverse(b.metadata.stars));
                 }
             }
             SortField::Name => {

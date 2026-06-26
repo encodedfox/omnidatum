@@ -22,7 +22,7 @@ impl Formatter for CsvFormatter {
     }
 
     fn format_detail(&self, repo: &Repository) -> String {
-        self.format_list(&[repo.clone()])
+        self.format_list(std::slice::from_ref(repo))
     }
 }
 

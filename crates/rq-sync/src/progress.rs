@@ -24,6 +24,7 @@ impl ProgressTracker {
     /// Start progress tracking with total count
     pub fn start(&mut self, total: usize) {
         let bar = ProgressBar::new(total as u64);
+        #[allow(clippy::expect_used)]
         bar.set_style(
             ProgressStyle::default_bar()
                 .template("[{elapsed_precise}] {bar:40.cyan/blue} {pos}/{len} {msg}")

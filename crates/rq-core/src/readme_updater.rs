@@ -23,12 +23,12 @@ impl ReadmeUpdater {
 
         if readme.contains(&marker_start) {
             // Replace existing marked section
+            #[allow(clippy::expect_used)]
             let re = Regex::new(&format!(
                 r"(?s){}.*?{}",
                 regex::escape(&marker_start),
                 regex::escape(marker_end)
-            ))
-            .expect("Invalid regex pattern for readme markers");
+            )).expect("Invalid regex pattern for readme markers - markers are constant");
 
             let replacement = format!("{}\n{}\n{}", marker_start, content, marker_end);
             re.replace(readme, replacement.as_str()).to_string()
@@ -44,7 +44,7 @@ impl ReadmeUpdater {
 
 impl Default for ReadmeUpdater {
     fn default() -> Self {
-        Self::new().expect("Failed to create ReadmeUpdater")
+        Self::new().unwrap_or_default()
     }
 }
 

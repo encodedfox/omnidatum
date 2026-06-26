@@ -516,7 +516,7 @@ fn draw_stats(f: &mut Frame, app: &App, area: Rect) {
             .or_default() += 1;
     }
     let mut lang_vec: Vec<(&str, usize)> = lang_counts.into_iter().collect();
-    lang_vec.sort_by(|a, b| b.1.cmp(&a.1));
+    lang_vec.sort_by_key(|b| std::cmp::Reverse(b.1));
 
     // Relation counts
     let mut rel_counts: std::collections::HashMap<String, usize> = std::collections::HashMap::new();
@@ -532,7 +532,8 @@ fn draw_stats(f: &mut Frame, app: &App, area: Rect) {
             .iter()
             .map(|r| r.quality_metrics.quality_score as usize)
             .sum::<usize>()
-            / total
+            .checked_div(total)
+            .unwrap_or(0)
     } else {
         0
     };
@@ -557,7 +558,7 @@ fn draw_stats(f: &mut Frame, app: &App, area: Rect) {
         Style::default().bold(),
     )]));
     let mut rel_vec: Vec<(String, usize)> = rel_counts.into_iter().collect();
-    rel_vec.sort_by(|a, b| b.1.cmp(&a.1));
+    rel_vec.sort_by_key(|b| std::cmp::Reverse(b.1));
     for (rel, count) in &rel_vec {
         lines.push(Line::from(format!("  {rel:<20} {count}")));
     }

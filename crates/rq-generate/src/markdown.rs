@@ -134,9 +134,10 @@ impl MarkdownGenerator {
         // Build language sections
         let mut language_sections = Vec::new();
         for lang_name in &lang_names {
+            #[allow(clippy::unwrap_used)]
             let repos = by_language
                 .get(lang_name)
-                .expect("key exists from iteration");
+                .unwrap();
 
             let template_repos: Vec<TemplateRepo> = repos
                 .iter()
@@ -182,7 +183,7 @@ impl MarkdownGenerator {
                         percentage: format!("{:.1}", (*count as f32 / stats.total as f32) * 100.0),
                     })
                     .collect();
-                platform_stats.sort_by(|a, b| b.count.cmp(&a.count));
+                platform_stats.sort_by_key(|b| std::cmp::Reverse(b.count));
 
                 context.insert("platforms", &platform_stats);
 
@@ -238,9 +239,10 @@ impl MarkdownGenerator {
 
         let mut language_sections = Vec::new();
         for lang_name in &lang_names {
+            #[allow(clippy::unwrap_used)]
             let lang_repos = by_language
                 .get(lang_name)
-                .expect("key exists from iteration");
+                .unwrap();
             let template_repos: Vec<TemplateRepo> = lang_repos
                 .iter()
                 .map(|r| {

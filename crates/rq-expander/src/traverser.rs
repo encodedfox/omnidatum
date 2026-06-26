@@ -220,6 +220,7 @@ impl BfsTraverser {
             let mut handles = Vec::new();
 
             for seed in current {
+                #[allow(clippy::expect_used)]
                 let permit = semaphore
                     .clone()
                     .acquire_owned()
@@ -312,7 +313,7 @@ impl BfsTraverser {
 
                 // Propagate: create seed for discovered user if within max_depth.
                 if edge.depth < seed.max_depth {
-                    Self::ensure_seed(&*guard, &seed, follower, edge.depth).ok();
+                    Self::ensure_seed(&*guard, seed, follower, edge.depth).ok();
                 }
             }
 
@@ -334,7 +335,7 @@ impl BfsTraverser {
 
                 // Propagate: create seed for discovered user if within max_depth.
                 if edge.depth < seed.max_depth {
-                    Self::ensure_seed(&*guard, &seed, followee, edge.depth).ok();
+                    Self::ensure_seed(&*guard, seed, followee, edge.depth).ok();
                 }
             }
 

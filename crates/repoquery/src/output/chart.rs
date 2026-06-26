@@ -35,7 +35,7 @@ pub fn bar_chart(data: &[(&str, u64)], header: &str) -> String {
         } else {
             1
         };
-        let bar: String = std::iter::repeat('█').take(bar_len).collect();
+        let bar: String = "█".repeat(bar_len);
         out.push_str(&format!(
             "{:<width$} {:>8} {}\n",
             label,

@@ -118,7 +118,7 @@ async fn validate_token_scopes(token: &str) -> Result<()> {
     let scope_list: Vec<&str> = scopes.split(',').map(|s| s.trim()).collect();
 
     if status.is_success() {
-        if !scope_list.is_empty() && scope_list[0] != "" {
+        if !scope_list.is_empty() && !scope_list[0].is_empty() {
             println!("   GitHub API responded with scopes: {}", scopes);
         } else {
             println!("   GitHub token validated (no scopes reported by API)");
